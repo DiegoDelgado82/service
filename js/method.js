@@ -14,7 +14,7 @@ pagina=""
 
 
 async function getMarcs() {
-  let url = 'https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/main/st.json';
+  let url = 'https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/main/baseSto.json';
              
   try {
       let res = await fetch(url);
