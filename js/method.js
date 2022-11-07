@@ -87,7 +87,7 @@ async function Add() {
   var ddlx = document.getElementById("ddlCategoria");
   removeOptions(ddlx)
   users.forEach(user => {
-    console.log("aca")
+    
     if(user.MARCA===document.getElementById("ddlMarca").value)
     {
         var option = document.createElement("OPTION");
