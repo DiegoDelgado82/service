@@ -1,5 +1,5 @@
 async function getUsers() {
-    let url = 'https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/247d4ab2eeba039dde5cf5bb5e64ba25dfa7e782/st.json';
+    let url = 'https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/main/st.json';
     try {
         let res = await fetch(url);
         return await res.json();
