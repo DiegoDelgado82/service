@@ -193,7 +193,7 @@ function NuevaBusqueda() {
   users.forEach(user => {
   
     
-  if (user.Marca=== document.getElementById("ddlMarca").value && user.CATEGORIA=== document.getElementById("ddlCategoria").value)
+  if (user.MARCA=== document.getElementById("ddlMarca").value && user.CATEGORIA=== document.getElementById("ddlCategoria").value)
   {
     document.getElementById("DatoWeb").textContent=user.WEB
     document.getElementById("DatoEmail").textContent=user.CORREO
