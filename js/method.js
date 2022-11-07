@@ -34,7 +34,7 @@ async function renderMarcs() {
   var auxMarcas=[];
   removeOptions(ddlx)
   users.forEach(user => {
-  auxMarcas[xIndex]=user.Marca;
+  auxMarcas[xIndex]=user.MARCA;
   xIndex++;
 
   
