@@ -1,124 +1,182 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 <link rel="stylesheet" href="style.css">
 <script src="js/method.js"></script>
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Buscador de servicios Técnicos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+      
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
 <body onload=getMarcs() class="Cuadro" id ="gradiente">
-
-  <div class="container" >
-  
-  
-<select id= "ddlCategoria" class= "Categoria">
-  <option value='Marca'>Producto</option>
-</select>
     
-    <div class="row"> 
-      <div class="borde color1 col-sm-12"> </div>
-      <div><img id="divImagen" src="https://serviciotecnico.surge.sh/static/media/logo.7de92371.jpeg" alt="Flowers in Chania" ></img></div>
-      
-      
-      <label class="Titulo">Buscador de Servicios Técnicos 2.0.1 </label><br/>
-    </div>
-        <label class="TituloMarca" id="TituloMarca"></label>
-        
-          <div class="DropdownMarc">
-            
+    <!-- Booking Start -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+
+
+                        <div class="container" >
+
+
+                            <select id= "ddlCategoria" class= "Categoria" >
+                              <option value='Marca'>Producto</option>
+                            </select>
+                                
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12"> </div>
+                                  <div class="borde color1 col-sm-12"><img src="https://serviciotecnico.surge.sh/static/media/logo.7de92371.jpeg" alt="Flowers in Chania" width="430" height="145"></img></div>
+                                  <div class="borde color3 col-sm-12"></div>
+                                  <div class="borde color3 col-sm-12"></div>
+                                 
+                                  
+                                  <label class="Titulo">Buscador de Servicios Técnicos 2.1 </label><br/>
+                                </div>
+                                    <label class="TituloMarca" id="TituloMarca"></label>
+                                    
+                                      <div class="DropdownMarc">
+                                        
+                                    </div>
+                                    <label class="TituloProducto" id="TituloProducto"></label>
+                                           
+                                      <div class="botonReintentar">
+                                       
+                                     </div>
+                                     <button class="BotonBuscar"onclick=retcar()><i class="fa fa-search"></i> </button>
+                            
+                                <div class="row">
+                                   
+                                <label class="ContenedorResultado"></label>
+                                
+                                <div class="row">
+                                <div class="borde color1 col-sm-12 col-md-12"></div>
+                                    
+                                </div>
+                                <br/><br/>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12"></div>
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                  
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                 
+                                  </div>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                  <br/><br/><label class="Telefono1" >
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                  </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                
+                                  <div class="borde color1 col-sm-12 col-md-12"><br/>
+                                  <br/><br/><br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12"></div>
+                                </div>
+                                
+                                <button class="BotonNuevo" onclick=copiarAlPortapapeles()>Copiar Datos</button>
+                                <br/><br/><br/><br/><br/><br/><br/>
+                                
+                               </div>
+                            
+                               <label class="Web" id="Web">Dirección Web</label><br/>
+                               <a href pagina class="DatoWeb" id="DatoWeb"  target="blank"></a>
+                               <label class="Email" id="Email">Email</label>
+                               <label class="DatoEmail" id="DatoEmail"></label>
+                               <label class="Telefono1" id="Telefono1">Teléfono 1</label>
+                              <label class="DatoTelefono1" id="DatoTelefono1"></label>
+                              <label class="Telefono2" id="Telefono2">Teléfono 2</label>
+                              <label class="DatoTelefono2" id="DatoTelefono2"></label>
+                            
+                            
+                            
+                              
+                            <label class="PiePagina"> Developed by Think DDD® - 2021 </label>
+                            <label id="TextoaCopiar"> </label>
+                            
+                            <label class="Leyenda"> Los datos suministrados en esta página corresponde a los brindados por los servicios ténicos de cada marca. Los mismos pueden ser modificados sin previo aviso. Para uso interno solamente. Actualizado 02-02-22 </label>
+                            
+                            
+                            
+                            
+                            
+                            <select id = "ddlMarca" class="Marca" onclick=Add() onchange=Add() >
+                              <option value='Marca'>Marca</option>
+                              </select>
+                            
+                            </div>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <label class="TituloProducto" id="TituloProducto"></label>
-               
-          <div class="botonReintentar">
-           
-         </div>
-         <button class="BotonBuscar"onclick=retcar()><i class="fa fa-search"></i> </button>
+    </div>
+    <!-- Booking Start -->
 
-    <div class="row">
-       
-    <label class="ContenedorResultado"></label>
+
     
-    <div class="row">
-    <div class="borde color1 col-sm-12 col-md-12"></div>
-        
-    </div>
-    <br/><br/>
-    <div class="row">
-      <div class="borde color1 col-sm-12 col-md-12"></div>
-      <div class="borde color1 col-sm-12 col-md-12">
-      
-      </div>
-    </div>
-    <div class="row">
-      <div class="borde color1 col-sm-12 col-md-12">
-     
-      </div>
-    </div>
-    <br/>
-    <div class="row">
-      <div class="borde color1 col-sm-12 col-md-12">
-      <br/><br/><label class="Telefono1" <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="row">
-    
-      <div class="borde color1 col-sm-12 col-md-12"><br/>
-      <br/><br/><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </div>
-    </div>
-    <div class="row">
-      <div class="borde color1 col-sm-12 col-md-12"></div>
-    </div>
-    
-    <button class="BotonNuevo" onclick=copiarAlPortapapeles()>Copiar Datos</button>
-      <!--a class=BotonDisponible href="https://drive.google.com/drive/folders/1I8Kp01UWT3kGHOoh13-Lt-5QW7q1x6s1?usp=sharing">Disponible</a--> 
-     
-    
-      
-      
-    <br/><br/><br/><br/><br/><br/><br/>
-    
-   </div>
 
-   <label class="Web" id="Web">Dirección Web</label><br/>
-   <a href pagina class="DatoWeb" id="DatoWeb"  target="blank"></a>
-   <label class="Email" id="Email">Email</label>
-   <label class="DatoEmail" id="DatoEmail"></label>
-   <label class="Telefono1" id="Telefono1">Teléfono 1</label>
-  <label class="DatoTelefono1" id="DatoTelefono1"></label>
-  <label class="Telefono2" id="Telefono2">Teléfono 2</label>
-  <label class="DatoTelefono2" id="DatoTelefono2"></label>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-
-  
-<a href="https://www.linkedin.com/in/diego-delgado-78aa6a191" class="PiePagina"> Developed by Think Solutions® - 2021 </a>
-
-<label id="TextoaCopiar"> </label>
-
-<label class="Leyenda"> Los datos suministrados en esta página corresponde a los brindados por los servicios ténicos de cada marca. Los mismos pueden ser modificados sin previo aviso. Para uso interno solamente. Actualizado 02-02-22 </label>
-
-
-
-
-
-<select id = "ddlMarca" class="Marca" onclick=Add()  onchange=Add()>
-<option value='Marca'>Marca</option>
-</select>
-
-
-
-
-
-
-
-
-
- 
-
-
-</div>
-
-
+    <!-- Template Javascript -->
+    <script src="js/prueba.js"></script>
 </body>
+
+</html>
+
+
+
 
