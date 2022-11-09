@@ -16,7 +16,9 @@
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
       
     
 </head>
@@ -45,7 +47,7 @@
                                   <div class="borde color3 col-sm-12"></div>
                                  
                                   
-                                  <label class="Titulo">Buscador de Servicios Técnicos 2.1 </label><br/>
+                                  <label class="Titulo">Buscador de Servicios Técnicos</label><br/>
                                 </div>
                                     <label class="TituloMarca" id="TituloMarca"></label>
                                     
@@ -105,7 +107,7 @@
                                </div>
                             
                                <label class="Web" id="Web">Dirección Web</label><br/>
-                               <a href pagina class="DatoWeb" id="DatoWeb"  target="blank"></a>
+                               <a href  class="DatoWeb" id="DatoWeb"  target="blank"></a>
                                <label class="Email" id="Email">Email</label>
                                <label class="DatoEmail" id="DatoEmail"></label>
                                <label class="Telefono1" id="Telefono1">Teléfono 1</label>
@@ -160,6 +162,10 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+       pagina= document.getElementById("DatoWeb").textContent
+       alert(pagina)
+    </script>
   
 </body>
 

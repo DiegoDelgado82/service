@@ -196,6 +196,8 @@ function NuevaBusqueda() {
   if (user.MARCA=== document.getElementById("ddlMarca").value && user.CATEGORIA=== document.getElementById("ddlCategoria").value)
   {
     document.getElementById("DatoWeb").textContent=user.WEB
+    document.getElementById("DatoWeb").setAttribute("href", user.WEB);
+   
     document.getElementById("DatoEmail").textContent=user.CORREO
     document.getElementById("DatoTelefono1").textContent=user.TELEFONO
     document.getElementById("DatoTelefono2").textContent=user.TELEFONO2
