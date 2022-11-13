@@ -1,0 +1,174 @@
+
+<link rel="stylesheet" href="style.css">
+<script src="js/method.js"></script>
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Buscador de servicios Técnicos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+      
+    
+</head>
+
+<body onload=getMarcs() class="Cuadro" id ="gradiente">
+    
+    <!-- Booking Start -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+
+
+                        <div class="container" >
+
+
+                            <select id= "ddlCategoria" class= "Categoria" >
+                              <option value='Marca'>Producto</option>
+                            </select>
+                                
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12"> </div>
+                                  <div class="borde color1 col-sm-12"><img class="logo" src="https://serviciotecnico.surge.sh/static/media/logo.7de92371.jpeg" alt="Flowers in Chania" width="387" height="130" ></img></div>
+                                  <div class="borde color3 col-sm-12"></div>
+                                  <div class="borde color3 col-sm-12"></div>
+                                 
+                                  
+                                  <label class="Titulo">Buscador de Servicios Técnicos  </label><br/>
+                                </div>
+                                    <label class="TituloMarca" id="TituloMarca"></label>
+                                    
+                                      <div class="DropdownMarc">
+                                        
+                                    </div>
+                                    <label class="TituloProducto" id="TituloProducto"></label>
+                                           
+                                      <div class="botonReintentar">
+                                       
+                                     </div>
+                                     <button class="BotonBuscar"onclick=renderBuscar()><i class="fa fa-search"></i> </button>
+                            
+                                <div class="row">
+                                   
+                                <label class="ContenedorResultado"></label>
+                                
+                                <div class="row">
+                                <div class="borde color1 col-sm-12 col-md-12"></div>
+                                    
+                                </div>
+                                <br/><br/>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12"></div>
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                  
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                 
+                                  </div>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12">
+                                  <br/><br/><label class="Telefono1" >
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                                  </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                
+                                  <div class="borde color1 col-sm-12 col-md-12"><br/>
+                                  <br/><br/><br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="borde color1 col-sm-12 col-md-12"></div>
+                                </div>
+                                
+                                <button class="BotonNuevo" onclick=copiarAlPortapapeles()>Copiar Datos</button>
+                                <br/><br/><br/><br/><br/><br/><br/>
+                                <button onclick="location.href='cuerpo.html'" >Pagina Inicio</button>
+                                
+                               </div>
+                            
+                               <label class="Web" id="Web">Dirección Web</label><br/>
+                               <a href  class="DatoWeb" id="DatoWeb"  target="blank"></a>
+                               <label class="Email" id="Email">Email</label>
+                               <label class="DatoEmail" id="DatoEmail"></label>
+                               <label class="Telefono1" id="Telefono1">Teléfono 1</label>
+                              <label class="DatoTelefono1" id="DatoTelefono1"></label>
+                              <label class="Telefono2" id="Telefono2">Teléfono 2</label>
+                              <label class="DatoTelefono2" id="DatoTelefono2"></label>
+                            
+                            
+                            
+                              
+                            <label class="PiePagina"> Developed by Think Solutions® - 2021 </label>
+                            <label id="TextoaCopiar"> </label>
+                            
+                            <label class="Leyenda"> Los datos suministrados en esta página corresponde a los brindados por los servicios ténicos de cada marca. Los mismos pueden ser modificados sin previo aviso. Para uso interno solamente. Actualizado 09-11-22 </label>
+                            
+                            
+                            
+                            
+                            
+                            <select id = "ddlMarca" class="Marca" onclick=Add() onchange=Add() >
+                              <option value='Marca'>Marca</option>
+                              </select>
+                            
+                            </div>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+
+
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+   
+  
+</body>
+
+</html>
+
+
+
+

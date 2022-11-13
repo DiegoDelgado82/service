@@ -1,0 +1,549 @@
+body
+{
+  background-image: linear-gradient(to bottom right, #080808,#31e7de);
+ 
+ 
+}
+ 
+ label
+{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color:white;
+}
+
+#divImagen
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    size: 10%;
+    width:430px;
+    height:145px;
+    
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container
+{
+  z-index: 10;
+
+  height: 835px;
+
+}
+
+
+.buscar
+
+{
+position: absolute;
+width: 300px;
+left:30px;
+}
+
+.logo
+{
+  position: absolute;
+  left:1rem;
+  top: 3rem;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.Titulo
+{
+  position: absolute;
+  width: 351px;
+  left:30px;
+  top:160px;
+  text-align: center;
+  
+  color: #61dafb;
+  font-size:1.5em;
+
+}
+
+
+.BotonBuscar
+{
+  z-index:20;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left:350px;
+  top:200px;
+  text-align: center;
+  align-items: center;
+  font-style: oblique;
+  font-size: 20px;
+
+  border-radius: 80%;
+  background-color: white;
+}
+
+.Buscar
+{
+  top:200px;
+  left: 280px;
+  height: 30px;
+  border-radius: 80%;
+
+}
+
+
+
+
+.ContenedorResultado
+{
+  z-index: 0; 
+  position:absolute;
+  top:285px;
+  left: 20px;
+  height: 320px;
+  width: 370px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: .25;
+
+  
+}
+
+.Web
+{
+  position:absolute;
+  top:295px;
+  left: 30px;
+  width: 351px;
+  text-align: center;
+  
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+
+.DatoWeb
+{
+  position:absolute;
+  top:320px;
+  left: 30px;
+  height: 50px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#2196F3;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+.Email
+{
+  position:absolute;
+  top:375px;
+  left: 30px;
+  width: 351px;
+  text-align: center;
+ 
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+.DatoEmail
+{
+  position:absolute;
+  top:400px;
+  left: 30px;
+  margin:auto;
+  height: 50px;
+  text-align: center;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#2196F3;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+
+}
+
+.Telefono1
+{
+  position:absolute;
+  top:455px;
+  left: 30px;
+  width: 340px;
+  margin:auto;
+  text-align: center;
+
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+.DatoTelefono1
+{
+  z-index:10 ;
+  position:absolute;
+  top:480px;
+  left: 30px;
+  height: 30px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#2196F3;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  margin:auto;
+  text-align: center;
+
+}
+
+
+.Telefono2
+{
+  position:absolute;
+  top:520px;
+  left: 30px;
+  width: 351px;
+  text-align: center;
+ 
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.DatoTelefono2
+{
+  position:absolute;
+  top:545px;
+  left: 30px;
+  height: 30px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#2196F3;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  margin:auto;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+.BotonNuevo
+{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: #3cd8d8;
+  border-radius: 5px;
+  left:105px;
+  border-width: 0ch;
+  top:630px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  backdrop-filter:blur(20px);
+  padding-top: 5px; 
+  
+
+}
+
+.BotonDisponible
+{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: #282c34;
+  border-radius: 20px;
+  left:230px;
+
+  top:05px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  backdrop-filter:blur(80px);
+  padding-top: 5px; 
+  
+
+}
+
+
+
+
+
+.menuNivelMemoria{
+  width: 179px!important;
+}
+
+
+
+
+.DropdownMarca{
+  position: absolute;
+  top: 50px;
+  margin-left: 00px;
+  width: 175px!important;
+}
+
+
+
+
+.DropdownMarca , .dropdown-toggle {background-image: linear-gradient(to right, black 0%, #354f5e  51%, #354f5e 100%)}
+  .DropdownMarca{
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    display:block ;
+    font-size: 1rem;
+    padding: 5px 150px;
+       
+    border:none;
+    margin-left:20px;
+    
+    
+    
+  }
+
+
+
+
+
+  .DropdownMarca:hover , .dropdown-toggle:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+
+  .DropdownMarca:focus , .dropdown-toggle:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+
+
+
+    
+    
+    
+    
+    
+    .DropdownProducto , .dropdown-toggle {background-image: linear-gradient(to right, black 0%, #354f5e  51%, #354f5e 100%)}
+      .DropdownProducto{
+        position:absolute;
+        color: white;
+        text-align: left;
+        transition: 0.5s;
+        background-size: 200% auto;
+        border-radius: 20px;
+        display:block ;
+        font-size: 1rem;
+        padding: 5px 75px;
+    
+        border:none;
+  
+        
+        
+        
+      }
+    
+    
+    
+    
+    
+      .DropdownProducto:hover , .dropdown-toggle:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: 0.5s;
+      }
+    
+      .DropdownProducto:focus , .dropdown-toggle:hover {
+          /*background-position: right center; /* change the direction of the change here */
+          color: white;
+          text-decoration: none;
+          border-radius: 20px;
+          transition: 0.5s;
+        }
+
+.ComboMarca
+{
+  position: absolute;
+  top:200px;
+  left:20px;
+}
+
+.ComboProducto
+{
+  position: absolute;
+  top:200px;
+  left:180px;
+}
+
+
+.TituloMarca
+{
+  position: absolute;
+  width: 720px;
+  left:10px;
+  top:240px;
+  text-align: center;
+  font-size: 16px;
+  height: 20px;
+  width: 370px;
+  border-radius: 20px;
+  
+  padding-top: -5px;
+  
+  
+
+}
+
+.TituloProducto
+{
+  position: absolute;
+  width:auto;
+  left:10px;
+  top:260px;
+  text-align: center;
+  font-size: 16px;
+  height: 20px;
+  width: 370px;
+  border-radius: 20px;
+  
+  padding-top: -5px;
+  
+
+}
+
+.Leyenda
+{
+  position: absolute;
+  left:30px;
+  top: 680px;
+  width: 351px;
+  text-align: center;
+  color:white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+.PiePagina
+{
+  position: absolute;
+  top: 805px;
+  left:30px;
+  width: 341px;
+  text-align: center;
+  color:white;
+  font-size: 16px;
+}
+
+.Marca
+{
+  position:absolute;
+  top:210px;
+  left:20px;
+  height:30px;
+  max-width: 130px;
+  min-width: 130px;
+  font-size: 14px;
+  border-radius:5px;
+  background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
+  color:black;
+  border-color:white;
+  
+  
+  
+}
+
+.Categoria
+{
+  position:absolute;
+  z-index:20;
+  top:210px;
+  left:190px;
+  height:30px;
+  max-width: 150px;
+  min-width: 150px;
+  border-radius:5px;
+  background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
+  color:black;
+  border-color:white;
+  font-size: 14px;
+    
+  
+}
+
+.imagen
+{
+  position:absolute;
+  top:0px;
+  left:-380px;
+}
