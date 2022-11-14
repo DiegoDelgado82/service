@@ -33,3 +33,9 @@ async function renderUsers() {
 }
 
 renderUsers();
+
+
+function hello()
+{
+    alert("hola");
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<title>Locales por provincia</title>
+
+<script>
+var idioma='es';
+</script>
+
+
+</head>
+<body>
+    <div class="gral">
+    	
+        <div class="header">
+        </div>
+        
+        <div class="body">
+            
+            <div class="bodyInt container-fluid">
+                <div class="row" style="position: absolute; top:5%; left:5%;">
+                	
+                	<div class="col-sm-4 col-xs-5 col-xx-12">
+                    	
+                        <div id="mapa">
+                            <img src="img/argentina.png" width="143" height="318" usemap="#Map">
+                            <map name="Map">
+                                    <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: provincia(1)" title="Asistencia t�cnica de Buenos Aires">
+                                    <area shape="poly" coords="96,115, 97,121, 104,122, 101,120, 100,115" href="javascript: at(2)" title="Asistencia t�cnica de Ciudad Aut�noma de Buenos Aires">
+                                    <area shape="poly" coords="68,21, 75,24, 82,31, 88,37, 95,42, 101,46, 98,51, 97,58, 91,57, 82,58, 77,57, 73,58, 73,51, 74,44, 74,40, 74,36, 70,35, 65,35, 60,35, 57,34, 63,29" href="javascript: at(4)" title="Asistencia t�cnica de Chaco">
+                                    <area shape="poly" coords="98,52, 97,61, 93,67, 91,71, 91,76, 92,81, 97,79, 100,79, 104,82, 104,85, 106,82, 111,76, 113,72, 117,68, 120,65, 123,62, 121,58, 119,54, 112,54, 106,52, 102,51" href="javascript: at(6)" title="Asistencia t�cnica de Corrientes">
+                                    <area shape="poly" coords="59,125, 54,126, 49,126, 46,126, 46,119, 44,114, 45,109, 47,105, 47,100, 45,98, 41,95, 40,92, 40,86, 42,83, 44,81, 46,77, 48,76, 51,74, 58,75, 62,77, 65,79, 68,81, 70,83, 71,84, 69,89, 70,94, 70,98, 71,102, 72,105, 69,108, 66,111, 64,116, 61,119, 60,120" href="javascript: provincia(2)" title="Asistencia t�cnica de C�rdoba">
+                                    <area shape="poly" coords="100,115, 91,112, 85,108, 82,104, 82,97, 82,92, 88,89, 91,86, 92,81, 96,81, 98,81, 102,82, 102,84, 105,85, 105,91, 103,97, 103,105" href="javascript: at(8)" title="Asistencia t�cnica de Entre R�os">
+                                    <area shape="poly" coords="23,19, 29,23, 31,15, 37,24, 47,25, 49,16, 43,15, 40,11, 40,2, 34,2, 31,1, 26,5, 24,10, 22,18" href="javascript: at(10)" title="Asistencia t�cnica de Jujuy">
+                                    <area shape="poly" coords="24,151, 23,139, 35,136, 47,135, 47,126, 57,126, 59,125, 59,140, 60,146, 60,164, 56,162, 52,161, 47,161, 37,162, 29,157" href="javascript: at(11)" title="Asistencia t�cnica de La Pampa">
+                                    <area shape="poly" coords="27,101, 28,106, 30,111, 31,116, 34,121, 35,126, 36,130, 36,136, 30,137, 23,139, 22,145, 23,150, 19,149, 13,147, 9,144, 7,141, 5,136, 5,132, 5,127, 8,123, 8,119, 8,114, 6,110, 8,105, 10,100, 14,102, 18,101, 22,100" href="javascript: at(13)" title="Asistencia t�cnica de Mendoza">
+                                    <area shape="poly" coords="122,59, 119,51, 127,47, 133,42, 136,37, 139,38, 141,42, 141,47, 141,51, 133,56, 123,59" href="javascript: at(14)" title="Asistencia t�cnica de Misiones">
+                                    <area shape="poly" coords="31,16, 29,24, 23,18, 15,26, 12,31, 18,33, 22,33, 28,32, 28,35, 28,39, 31,40, 39,40, 48,40, 50,34, 57,34, 67,22, 66,5, 61,0, 55,-1, 51,1, 50,7, 48,8, 45,2, 41,2, 41,11, 45,14, 49,16, 49,21, 48,25, 41,26, 37,25, 34,21" href="javascript: at(17)" title="Asistencia t�cnica de Salta">
+                                    <area shape="poly" coords="6,65, 12,69, 12,76, 18,77, 28,87, 29,94, 31,97, 27,97, 27,101, 21,99, 16,101, 12,100, 8,100, 7,107, 1,97, 1,93, 4,85, 4,74" href="javascript: at(18)" title="Asistencia t�cnica de San Juan">
+                                    <area shape="poly" coords="72,58, 79,58, 85,58, 91,57, 95,57, 95,59, 94,64, 92,67, 90,70, 91,74, 91,77, 90,79, 90,83, 88,86, 84,90, 81,92, 79,100, 79,103, 81,105, 80,110, 76,114, 72,117, 68,118, 65,118, 66,114, 68,111, 71,108, 73,104, 71,100, 70,97, 71,92, 71,88, 73,82, 71,78, 72,73, 71,67, 72,63" href="javascript: at(21)" title="Asistencia t�cnica de Santa Fe">
+                                    <area shape="poly" coords="73,56, 73,50, 72,44, 72,37, 70,35, 63,36, 54,36, 49,41, 48,46, 49,50, 48,52, 46,55, 44,60, 45,62, 46,67, 46,71, 47,74, 51,74, 56,74, 62,75, 66,77, 68,79, 71,70" href="javascript: at(22)" title="Asistencia t�cnica de Santiago del Estero">
+                                    <area shape="poly" coords="43,57, 44,53, 47,50, 47,47, 48,42, 47,40, 43,40, 40,41, 35,41, 30,41, 32,43, 34,46, 34,49, 34,52, 36,55, 38,57" href="javascript: at(24)" title="Asistencia t�cnica de Tucum�n">
+                            </map>
+                            
+					</div>
+                    <div id="info" class="col-sm-8 col-xs-7 col-xx-12">
+                        <div id="datos" style="color:brown"></div>
+                        <div id="demo" style="color:brown"></div>
+					</div>
+                </div>
+                <!-- /.row -->
+
+
+				
+            </div>
+
+    
+		</div>
+        <!-- /.body -->
+        
+       
+        
+    </div>
+    <!-- /.gral -->
+    
+
+
+
+      </body>
+      
+      <script>
+
+
+
+
+
+        function provincia(id)
+        {
+            
+            switch (id) {
+            case 1:
+                    document.getElementById("demo").innerHTML = "<h2>Buenos Aires</h2>";
+                    break;
+            case 2:
+                    document.getElementById("demo").innerHTML = "<h2>Córdoba</h2>";
+                    break;
+            default:
+            }
+        }
+        
+                    var prov=new Array();
+                    prov[1]='<h2>Buenos Aires</h2><br><h4>Citta Repuestos</h4><p>Almafuerte 201 (esquina Rondeau)<br>CP: 8000 - Bah�a Blanca<br>TE: (0291) 452-0881</p><br><h4>EFECE Service y Repuestos</h4><p>Diag. 73 N� 2258, entre 17 y 18<br>CP: 1900 - La Plata<br>TE: (0221) 422-6492</p><br><h4>Electro Pc Man�a</h4><p>Gorritti 387<br>CP: 1832 - Lomas de Zamora<br>TE: (011) 3008-0059</p><br><h4>Electron</h4><p>San Mart�n 3486<br>CP: 7600 - Mar del Plata<br>TE: (0223) 575-1982</p><br><h4>Repuestodos</h4><p>Larrea 39<br>CP: 1722 - Merlo Norte<br>TE: (0220) 482-7094 / (0220) 485-3124</p><br><h4>ST Mor�n</h4><p>9 de Julio 448<br>CP: B1708JDJ - Mor�n<br>TE: (011) 4628-8471</p><br><h4>Max Service Pilar</h4><p>Las Magnolias 771<br>CP: B1629PGE - Pilar<br>TE: (011) 7533-1146</p><br><h4>Servicio T�cnico Benito </h4><p>H. Yrigoyen 735<br>CP: 1878 - Quilmes<br>TE: (011) 4254-1594</p><br><h4>AVESA Repuestos Electrodom�sticos</h4><p>Bolivar 675<br>CP: 1704 - Ramos Mej�a<br>TE: (011) 4654-6878</p><br><h4>Laurenzano Servihogar</h4><p>Av. Pte. Per�n 1928<br>CP: 1663 - San Miguel<br>TE: (011) 4664-4700</p>';
+                    prov[2]='<h2>Ciudad Aut�noma de Buenos Aires</h2><br><h4>ST Caballito</h4><p> Centenera 215<br>CP: C1424AME - B� Caballito<br>TE: (011) 4903-8649</p><br><h4>Servi Hogar Lugano</h4><p>Av. Fern�ndez de la Cruz 6447<br>CP: C1439CPD - B� Lugano<br>TE: (011) 4638-9764</p>';
+                    prov[4]='<h2>Chaco</h2><br><h4>DHCP Sistemas</h4><p>Liniers 446<br>CP: 3500 - Resistencia<br>TE: (0362) 443-1925</p>';
+                    prov[6]='<h2>Corrientes</h2><br><h4>Electroservices Schneebauer</h4><p>Mariano Moreno 1761<br>CP: 3400 - Corrientes<br>TE: (0379) 446-0135</p>';
+                    prov[7]='<h2>C�rdoba</h2><br><h4>NDF Service C�rdoba</h4><p>Av. Croacia 3220<br>CP: 5000 - C�rdoba<br>TE: (0351) 495-1251 / (0351) (15) 531-2965</p>';
+                    prov[8]='<h2>Entre R�os</h2><br><h4>Electro Miraglio</h4><p>Churruar�n 899<br>CP: 3100 - Paran�<br>TE: (0343) 424-0545</p>';
+                    prov[10]='<h2>Jujuy</h2><br><h4>Servicio T�cnico Castillo</h4><p>Barrio N�stor Kirchner, manzana 7 lote 14<br>CP: 4500 - San Pedro<br>TE: (03888) (15) 52-9604</p>';
+                    prov[11]='<h2>La Pampa</h2><br><h4>Servicio de Electrodom�sticos El Tigre </h4><p>Av. Belgrano Norte 741<br>CP: 6300 - Santa Rosa<br>TE: (02954) 41-2980 / 30-2024</p>';
+                    prov[13]='<h2>Mendoza</h2><br><h4>Delta Electr�nica</h4><p>Montecaseros 2043<br>CP: 5500 - Mendoza<br>TE: (0261) 429-9974</p><br><h4>Servicio T�cnico Juanjo</h4><p>Day 1206<br>CP: 5600 - San Rafael<br>TE: (0260) 442-9720  / (0260) (15) 439-2919</p>';
+                    prov[14]='<h2>Misiones</h2><br><h4>Electr�nica y Servicio</h4><p>Av. Bustamante 2986 c/ Av Lavalle<br>CP: 3300 - Posadas<br>TE: (0376) (15) 465-5733 y (0376) 526-0721</p>';
+                    prov[17]='<h2>Salta</h2><br><h4>Multiservis AyD</h4><p>Florida 740<br>CP: 4400 - Salta<br>TE: (0387) 568-0507</p>';
+                    prov[18]='<h2>San Juan</h2><br><h4>Os-ba reparaciones </h4><p>Av. Alem 115 (norte)<br>CP: 5400 - San Juan<br>TE: (0264) 421-3928,  (0264) 509-6540</p><br><h4>OS-BA REPARACIONES</h4><p>Avda  Espa�a Sur 4436 (entre Gdor. Quiroga y Espeleta)<br>CP: 5425 - Villa  Krause<br>TE: (0264) 509-6540</p>';
+                    prov[21]='<h2>Santa Fe</h2><br><h4>Mundo El�ctrico</h4><p> Av. Ernesto Salva 548<br>CP: 2300 - Rafaela<br>TE: (03492) 42-0094</p><br><h4>Rossi Electrodom�sticos</h4><p>Habegger 222<br>CP: 3560 - Reconquista<br>TE: (03482) 43-3218</p><br><h4>Criser Repuestos</h4><p>Rioja 2380<br>CP: 2000 - Rosario<br>TE: (0341) 426-0105</p><br><h4>Criser Repuestos</h4><p>Mendoza 3546<br>CP: 2000 - Rosario<br>TE: (0341) 435-1336 / (0341) 436-0710</p><br><h4>Litoral Service</h4><p>1� de mayo 2293<br>CP: 3000 - Santa Fe<br>TE: (0342) 580-8019 / Whatsapp: 342 5765190</p>';
+                    prov[22]='<h2>Santiago del Estero</h2><br><h4>Ra�l Barchini</h4><p>Av. Rivadavia 833<br>CP: 4200 - Santiago del Estero<br>TE: (0385) 421-3872 / 422-3755</p><br><h4>Santiago Service</h4><p>Chaco 78<br>CP: 4200 - Santiago del Estero<br>TE: (0385) 473-6184</p><p>Solo para secarropas centr�fugos.</p>';
+                    prov[24]='<h2>Tucum�n</h2><br><h4>Servicio T�cnico Mussatti</h4><p>Colombia 3833<br>CP: 4000 - San Miguel de Tucum�n<br>TE: (0381) 485-3265</p>';
+        </script>
+      
+      
+      </html>
