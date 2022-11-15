@@ -6,12 +6,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       </head>
 
-
-
+<script src="js/store.js"></script>
 <script>
 var idioma='es';
 </script>
@@ -35,11 +35,11 @@ var idioma='es';
                             <!--Pasar las coordenadas del mapa a un json-->
                             <img src="img/argentina.png" width="143" height="318" usemap="#Map">
                             <map name="Map">
-                                    <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: provincia(1)" title="Asistencia t�cnica de Buenos Aires">
+                                    <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: renderStore('Buenos Aires')" title="Asistencia t�cnica de Buenos Aires">
                                     <area shape="poly" coords="96,115, 97,121, 104,122, 101,120, 100,115" href="javascript: at(2)" title="Asistencia t�cnica de Ciudad Aut�noma de Buenos Aires">
                                     <area shape="poly" coords="68,21, 75,24, 82,31, 88,37, 95,42, 101,46, 98,51, 97,58, 91,57, 82,58, 77,57, 73,58, 73,51, 74,44, 74,40, 74,36, 70,35, 65,35, 60,35, 57,34, 63,29" href="javascript: at(4)" title="Asistencia t�cnica de Chaco">
                                     <area shape="poly" coords="98,52, 97,61, 93,67, 91,71, 91,76, 92,81, 97,79, 100,79, 104,82, 104,85, 106,82, 111,76, 113,72, 117,68, 120,65, 123,62, 121,58, 119,54, 112,54, 106,52, 102,51" href="javascript: at(6)" title="Asistencia t�cnica de Corrientes">
-                                    <area shape="poly" coords="59,125, 54,126, 49,126, 46,126, 46,119, 44,114, 45,109, 47,105, 47,100, 45,98, 41,95, 40,92, 40,86, 42,83, 44,81, 46,77, 48,76, 51,74, 58,75, 62,77, 65,79, 68,81, 70,83, 71,84, 69,89, 70,94, 70,98, 71,102, 72,105, 69,108, 66,111, 64,116, 61,119, 60,120" href="javascript: provincia(2)" title="Asistencia t�cnica de C�rdoba">
+                                    <area shape="poly" coords="59,125, 54,126, 49,126, 46,126, 46,119, 44,114, 45,109, 47,105, 47,100, 45,98, 41,95, 40,92, 40,86, 42,83, 44,81, 46,77, 48,76, 51,74, 58,75, 62,77, 65,79, 68,81, 70,83, 71,84, 69,89, 70,94, 70,98, 71,102, 72,105, 69,108, 66,111, 64,116, 61,119, 60,120" href="javascript: renderStore('Córdoba')" title="Asistencia t�cnica de C�rdoba">
                                     <area shape="poly" coords="100,115, 91,112, 85,108, 82,104, 82,97, 82,92, 88,89, 91,86, 92,81, 96,81, 98,81, 102,82, 102,84, 105,85, 105,91, 103,97, 103,105" href="javascript: at(8)" title="Asistencia t�cnica de Entre R�os">
                                     <area shape="poly" coords="23,19, 29,23, 31,15, 37,24, 47,25, 49,16, 43,15, 40,11, 40,2, 34,2, 31,1, 26,5, 24,10, 22,18" href="javascript: at(10)" title="Asistencia t�cnica de Jujuy">
                                     <area shape="poly" coords="24,151, 23,139, 35,136, 47,135, 47,126, 57,126, 59,125, 59,140, 60,146, 60,164, 56,162, 52,161, 47,161, 37,162, 29,157" href="javascript: at(11)" title="Asistencia t�cnica de La Pampa">
@@ -91,20 +91,7 @@ var idioma='es';
 
 
 
-        function provincia(id)
-        {
-            
-            switch (id) {
-            case 1:
-                    document.getElementById("demo").innerHTML = "<h2 style:>Buenos Aires</h2>";
-                    break;
-            case 2:
-                    document.getElementById("demo").innerHTML = "<h2>Córdoba</h2><a href='https://www.w3schools.com'>9-Córdoba Colón</a> <br><a href='https://www.w3schools.com'>24-Barrio Jardín</a><br><a href='https://www.w3schools.com'>50-Recta Martinolli</a><br><a href='https://www.w3schools.com'>54-Villa Allende</a>";
-                    
-                    break;
-            default:
-            }
-        }
+        
         
                     var prov=new Array();
                     prov[1]='<h2>Buenos Aires</h2><br><h4>Citta Repuestos</h4><p>Almafuerte 201 (esquina Rondeau)<br>CP: 8000 - Bah�a Blanca<br>TE: (0291) 452-0881</p><br><h4>EFECE Service y Repuestos</h4><p>Diag. 73 N� 2258, entre 17 y 18<br>CP: 1900 - La Plata<br>TE: (0221) 422-6492</p><br><h4>Electro Pc Man�a</h4><p>Gorritti 387<br>CP: 1832 - Lomas de Zamora<br>TE: (011) 3008-0059</p><br><h4>Electron</h4><p>San Mart�n 3486<br>CP: 7600 - Mar del Plata<br>TE: (0223) 575-1982</p><br><h4>Repuestodos</h4><p>Larrea 39<br>CP: 1722 - Merlo Norte<br>TE: (0220) 482-7094 / (0220) 485-3124</p><br><h4>ST Mor�n</h4><p>9 de Julio 448<br>CP: B1708JDJ - Mor�n<br>TE: (011) 4628-8471</p><br><h4>Max Service Pilar</h4><p>Las Magnolias 771<br>CP: B1629PGE - Pilar<br>TE: (011) 7533-1146</p><br><h4>Servicio T�cnico Benito </h4><p>H. Yrigoyen 735<br>CP: 1878 - Quilmes<br>TE: (011) 4254-1594</p><br><h4>AVESA Repuestos Electrodom�sticos</h4><p>Bolivar 675<br>CP: 1704 - Ramos Mej�a<br>TE: (011) 4654-6878</p><br><h4>Laurenzano Servihogar</h4><p>Av. Pte. Per�n 1928<br>CP: 1663 - San Miguel<br>TE: (011) 4664-4700</p>';
