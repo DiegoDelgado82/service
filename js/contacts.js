@@ -45,3 +45,53 @@ async function getContacts() {
   // hacer funcion para cargar un combo con las tiendas
 
   // hacer funcion para mostrar los contactos de la tienda seleccionada
+
+  async function renderLocals() {
+    var ddlx = document.getElementById("Locales");
+    removeOptions(ddlx)
+    let local = await getContacts();
+   
+  
+    
+    local.forEach(local => {
+    
+        var option = document.createElement("OPTION");
+        option.innerHTML = local.Punto + "-"+local.Nombre;
+        ddlx.options.add(option);
+   
+      
+    });
+}
+
+
+function removeOptions(ddl)
+{
+  
+  var j, L =document.getElementById("Locales").options.length - 1;
+  for(j = L; j >= 0; j--) 
+  {
+    
+    ddl.remove(j);
+  }
+}
+
+
+async function findLocals() {
+    var localElegido = document.getElementById("Locales").value;
+    let local = await getContacts();
+    
+    
+    local.forEach(local => {
+        
+        if(localElegido=== local.Punto + "-"+local.Nombre)
+       {
+        document.getElementById("Jefe").innerHTML="<h3>"+local.Jefe+"</h3> <ul> <li><i class='fa fa-phone'></i>"+ local.Celular+"<li><i class='fa fa-envelope'></i>"+local.Mail+"<ul>"
+       
+        
+
+
+        document.getElementById("demo").innerHTML =leyenda
+       }
+           
+    });
+}
