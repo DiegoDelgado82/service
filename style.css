@@ -76,7 +76,7 @@ button{
 {
   z-index: 10;
 
-  height: 835px;
+  height: 800px;
 
 }
 
@@ -517,13 +517,12 @@ left:30px;
 .PiePagina
 {
   position: absolute;
-  top: 805px;
+  top: 780px;
   left:30px;
   width: 341px;
   text-align: center;
-  color:white;
-  font-size: 16px;
-}
+  color:#2196F3;
+  font-size: 14px;
 
 .Marca
 {
