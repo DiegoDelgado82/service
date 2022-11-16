@@ -262,7 +262,14 @@ function NuevaBusqueda() {
 
 renderBuscar();
 
-
-
+function borrarDatos()
+{
+  document.getElementById("DatoWeb").textContent=""
+    document.getElementById("DatoWeb").setAttribute("href", "");
+   
+    document.getElementById("DatoEmail").textContent=""
+    document.getElementById("DatoTelefono1").textContent=""
+    document.getElementById("DatoTelefono2").textContent=""
+}
 
 

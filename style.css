@@ -1,17 +1,25 @@
 body
 {
-  background-image: linear-gradient(to bottom right, #080808,#31e7de);
+ 
   font-family: 'Rubik', sans-serif;
  
 }
  
  label
 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1em;
   text-align: center;
-  color:white;
+  color:black;
 }
+a{
+  font-family: 'Rubik', sans-serif;
+}
+
+button{
+  font-family: 'Rubik', sans-serif;
+}
+
 
 #divImagen
 {
@@ -98,8 +106,20 @@ left:30px;
   top:160px;
   text-align: center;
   
-  color: #61dafb;
+  color: black;
   font-size:1.5em;
+
+}
+.instrucciones
+{
+  position: absolute;
+  width: 351px;
+  left:30px;
+  top:190px;
+  text-align: left;
+  
+  color: black;
+  font-size:0.8em;
 
 }
 
@@ -161,7 +181,7 @@ left:30px;
   text-align: center;
   
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -181,7 +201,7 @@ left:30px;
   color:black;
   font-size: 14px;
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
+  
 }
 
 
@@ -194,7 +214,7 @@ left:30px;
   text-align: center;
  
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -225,7 +245,7 @@ left:30px;
   text-align: center;
 
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -257,7 +277,7 @@ left:30px;
   text-align: center;
  
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -489,8 +509,8 @@ left:30px;
   top: 680px;
   width: 351px;
   text-align: center;
-  color:white;
-  font-family: 'DM Sans', sans-serif;
+  color:black;
+  
   font-size: 16px;
 }
 
@@ -508,8 +528,8 @@ left:30px;
 .Marca
 {
   position:absolute;
-  top:210px;
-  left:20px;
+  top:230px;
+  left:40px;
   height:30px;
   max-width: 130px;
   min-width: 130px;
@@ -517,7 +537,7 @@ left:30px;
   border-radius:5px;
   background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
   color:black;
-  border-color:white;
+  border-color:black;
   
   
   
@@ -527,15 +547,15 @@ left:30px;
 {
   position:absolute;
   z-index:20;
-  top:210px;
-  left:190px;
+  top:230px;
+  left:220px;
   height:30px;
   max-width: 150px;
   min-width: 150px;
   border-radius:5px;
   background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
   color:black;
-  border-color:white;
+  border-color:black;
   font-size: 14px;
     
   
@@ -555,3 +575,11 @@ left:30px;
   
 }
 
+.encabezado
+{
+  top:0%;
+  left:0%;
+  width: 300px;
+  height: 70px;
+  border-color: #61dafb;
+}
