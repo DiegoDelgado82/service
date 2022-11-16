@@ -79,18 +79,15 @@ function removeOptions(ddl)
 async function findLocals() {
     var localElegido = document.getElementById("Locales").value;
     let local = await getContacts();
-    
+    document.getElementById("Jefe").innerHTML=""
     
     local.forEach(local => {
         
         if(localElegido=== local.Punto + "-"+local.Nombre)
        {
-        document.getElementById("Jefe").innerHTML="<h3>"+local.Jefe+"</h3> <ul> <li><i class='fa fa-phone'></i>"+ local.Celular+"<li><i class='fa fa-envelope'></i>"+local.Mail+"<ul>"
+        document.getElementById("Jefe").innerHTML="<h3>"+local.Jefe+"</h3> <li><i class='fab fa-whatsapp'></i> "+"<a href='https://wa.me/54"+local.Celular+"'?text=Hola' target='_blank'>"+local.Celular+"</a></li><li><i class='fa fa-envelope'></i> "+local.Mail+"<ul>"
        
-        
-
-
-        document.getElementById("demo").innerHTML =leyenda
+    
        }
            
     });

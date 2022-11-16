@@ -1,7 +1,7 @@
 body
 {
   background-image: linear-gradient(to bottom right, #080808,#31e7de);
- 
+  font-family: 'Rubik', sans-serif;
  
 }
  
@@ -554,3 +554,4 @@ left:30px;
   color: black;
   
 }
+
