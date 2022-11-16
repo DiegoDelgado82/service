@@ -4,11 +4,16 @@
     <head>
         <title>Locales por provincia</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
       </head>
 
 <script src="js/store.js"></script>
@@ -26,12 +31,16 @@ var idioma='es';
         </div>
         
         <div class="body">
-            
+            <button class="BotonBuscar" style="position: absolute; top:2%; left:4%; "><i class="fas fa-home"></i> </button>
             <div class="bodyInt container-fluid">
-                <div class="row" style="position: absolute; top:5%; left:15%;">
+                <div class="row" style="position: absolute; top:8%; left:10%;">
                 	
-                	<div class="col-sm-4 col-xs-5 col-xx-12">
-                    	
+                	<div class="col-sm-12 col-xs-12 col-xx-12">
+                    	<div class="header">
+                            <h1>Tienda por provincia</h1>
+                            <p>Seleccioná la provincia para obtener la info</p>
+                            <br>
+                        </div>   
                         <div id="mapa">
                             <!--Pasar las coordenadas del mapa a un json-->
                             <img src="img/argentina.png" width="143" height="318" usemap="#Map">
@@ -60,7 +69,7 @@ var idioma='es';
 					</div>
                 </div>
 
-                <div class="row" style="position: absolute; top:5%; left:20rem;">
+                <div class="row" style="position: absolute; top:24%; left:20rem;">
                     <div id="demo" style="color:blue; width: 300px;">
                     <h3>
                     </div>
