@@ -28,7 +28,7 @@ var idioma='es';
     <div class="gral">
     	
         <div class="header">
-            <label class="recuadro" ></label>
+          
         </div>
         
         <div class="body" >
@@ -41,6 +41,7 @@ var idioma='es';
                 	
                 	<div class="col-sm-12 col-xs-12 col-xx-12">
                     	<div class="header">
+                            <label class="recuadro" ></label>
                             <h1>Tienda por provincia</h1>
                             <p>Seleccioná la provincia para obtener la info</p>
                             <br>
@@ -49,21 +50,21 @@ var idioma='es';
                             <!--Pasar las coordenadas del mapa a un json-->
                             <img src="img/argentina.png" width="143" height="318" usemap="#Map">
                             <map name="Map">
-                                    <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: renderContact(1)" title="Asistencia t�cnica de Buenos Aires">
-                                    <area shape="poly" coords="96,115, 97,121, 104,122, 101,120, 100,115" href="javascript: at(2)" title="Asistencia t�cnica de Ciudad Aut�noma de Buenos Aires">
-                                    <area shape="poly" coords="68,21, 75,24, 82,31, 88,37, 95,42, 101,46, 98,51, 97,58, 91,57, 82,58, 77,57, 73,58, 73,51, 74,44, 74,40, 74,36, 70,35, 65,35, 60,35, 57,34, 63,29" href="javascript: at(4)" title="Asistencia t�cnica de Chaco">
-                                    <area shape="poly" coords="98,52, 97,61, 93,67, 91,71, 91,76, 92,81, 97,79, 100,79, 104,82, 104,85, 106,82, 111,76, 113,72, 117,68, 120,65, 123,62, 121,58, 119,54, 112,54, 106,52, 102,51" href="javascript: at(6)" title="Asistencia t�cnica de Corrientes">
-                                    <area shape="poly" coords="59,125, 54,126, 49,126, 46,126, 46,119, 44,114, 45,109, 47,105, 47,100, 45,98, 41,95, 40,92, 40,86, 42,83, 44,81, 46,77, 48,76, 51,74, 58,75, 62,77, 65,79, 68,81, 70,83, 71,84, 69,89, 70,94, 70,98, 71,102, 72,105, 69,108, 66,111, 64,116, 61,119, 60,120" href="javascript: renderStore('Córdoba')" title="Asistencia t�cnica de C�rdoba">
-                                    <area shape="poly" coords="100,115, 91,112, 85,108, 82,104, 82,97, 82,92, 88,89, 91,86, 92,81, 96,81, 98,81, 102,82, 102,84, 105,85, 105,91, 103,97, 103,105" href="javascript: at(8)" title="Asistencia t�cnica de Entre R�os">
-                                    <area shape="poly" coords="23,19, 29,23, 31,15, 37,24, 47,25, 49,16, 43,15, 40,11, 40,2, 34,2, 31,1, 26,5, 24,10, 22,18" href="javascript: at(10)" title="Asistencia t�cnica de Jujuy">
-                                    <area shape="poly" coords="24,151, 23,139, 35,136, 47,135, 47,126, 57,126, 59,125, 59,140, 60,146, 60,164, 56,162, 52,161, 47,161, 37,162, 29,157" href="javascript: at(11)" title="Asistencia t�cnica de La Pampa">
-                                    <area shape="poly" coords="27,101, 28,106, 30,111, 31,116, 34,121, 35,126, 36,130, 36,136, 30,137, 23,139, 22,145, 23,150, 19,149, 13,147, 9,144, 7,141, 5,136, 5,132, 5,127, 8,123, 8,119, 8,114, 6,110, 8,105, 10,100, 14,102, 18,101, 22,100" href="javascript: at(13)" title="Asistencia t�cnica de Mendoza">
-                                    <area shape="poly" coords="122,59, 119,51, 127,47, 133,42, 136,37, 139,38, 141,42, 141,47, 141,51, 133,56, 123,59" href="javascript: at(14)" title="Asistencia t�cnica de Misiones">
-                                    <area shape="poly" coords="31,16, 29,24, 23,18, 15,26, 12,31, 18,33, 22,33, 28,32, 28,35, 28,39, 31,40, 39,40, 48,40, 50,34, 57,34, 67,22, 66,5, 61,0, 55,-1, 51,1, 50,7, 48,8, 45,2, 41,2, 41,11, 45,14, 49,16, 49,21, 48,25, 41,26, 37,25, 34,21" href="javascript: at(17)" title="Asistencia t�cnica de Salta">
-                                    <area shape="poly" coords="6,65, 12,69, 12,76, 18,77, 28,87, 29,94, 31,97, 27,97, 27,101, 21,99, 16,101, 12,100, 8,100, 7,107, 1,97, 1,93, 4,85, 4,74" href="javascript: at(18)" title="Asistencia t�cnica de San Juan">
-                                    <area shape="poly" coords="72,58, 79,58, 85,58, 91,57, 95,57, 95,59, 94,64, 92,67, 90,70, 91,74, 91,77, 90,79, 90,83, 88,86, 84,90, 81,92, 79,100, 79,103, 81,105, 80,110, 76,114, 72,117, 68,118, 65,118, 66,114, 68,111, 71,108, 73,104, 71,100, 70,97, 71,92, 71,88, 73,82, 71,78, 72,73, 71,67, 72,63" href="javascript: at(21)" title="Asistencia t�cnica de Santa Fe">
-                                    <area shape="poly" coords="73,56, 73,50, 72,44, 72,37, 70,35, 63,36, 54,36, 49,41, 48,46, 49,50, 48,52, 46,55, 44,60, 45,62, 46,67, 46,71, 47,74, 51,74, 56,74, 62,75, 66,77, 68,79, 71,70" href="javascript: at(22)" title="Asistencia t�cnica de Santiago del Estero">
-                                    <area shape="poly" coords="43,57, 44,53, 47,50, 47,47, 48,42, 47,40, 43,40, 40,41, 35,41, 30,41, 32,43, 34,46, 34,49, 34,52, 36,55, 38,57" href="javascript: at(24)" title="Asistencia t�cnica de Tucum�n">
+                                    <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: renderStore('Buenos Aires')" title="Buenos Aires">
+                                    <area shape="poly" coords="96,115, 97,121, 104,122, 101,120, 100,115" href="javascript: renderStore('Caba')" title="Ciudad Autónoma de Buenos Aires">
+                                    <area shape="poly" coords="68,21, 75,24, 82,31, 88,37, 95,42, 101,46, 98,51, 97,58, 91,57, 82,58, 77,57, 73,58, 73,51, 74,44, 74,40, 74,36, 70,35, 65,35, 60,35, 57,34, 63,29" href="javascript: renderStore('Chaco')" title="Chaco">
+                                    <area shape="poly" coords="98,52, 97,61, 93,67, 91,71, 91,76, 92,81, 97,79, 100,79, 104,82, 104,85, 106,82, 111,76, 113,72, 117,68, 120,65, 123,62, 121,58, 119,54, 112,54, 106,52, 102,51" href="javascript: renderStore('Corrientes')" title="Corrientes">
+                                    <area shape="poly" coords="59,125, 54,126, 49,126, 46,126, 46,119, 44,114, 45,109, 47,105, 47,100, 45,98, 41,95, 40,92, 40,86, 42,83, 44,81, 46,77, 48,76, 51,74, 58,75, 62,77, 65,79, 68,81, 70,83, 71,84, 69,89, 70,94, 70,98, 71,102, 72,105, 69,108, 66,111, 64,116, 61,119, 60,120" href="javascript: renderStore('Córdoba')" title="Córdoba">
+                                    <area shape="poly" coords="100,115, 91,112, 85,108, 82,104, 82,97, 82,92, 88,89, 91,86, 92,81, 96,81, 98,81, 102,82, 102,84, 105,85, 105,91, 103,97, 103,105" href="javascript: renderStore('Entre Ríos')" title="Entre Ríos">
+                                    <area shape="poly" coords="23,19, 29,23, 31,15, 37,24, 47,25, 49,16, 43,15, 40,11, 40,2, 34,2, 31,1, 26,5, 24,10, 22,18" href="javascript: renderStore('Jujuy')" title="Jujuy">
+                                    <area shape="poly" coords="24,151, 23,139, 35,136, 47,135, 47,126, 57,126, 59,125, 59,140, 60,146, 60,164, 56,162, 52,161, 47,161, 37,162, 29,157" href="javascript: renderStore('La Pampa')" title="La Pampa">
+                                    <area shape="poly" coords="27,101, 28,106, 30,111, 31,116, 34,121, 35,126, 36,130, 36,136, 30,137, 23,139, 22,145, 23,150, 19,149, 13,147, 9,144, 7,141, 5,136, 5,132, 5,127, 8,123, 8,119, 8,114, 6,110, 8,105, 10,100, 14,102, 18,101, 22,100" href="javascript: renderStore('Mendoza')" title="Mendoza">
+                                    <area shape="poly" coords="122,59, 119,51, 127,47, 133,42, 136,37, 139,38, 141,42, 141,47, 141,51, 133,56, 123,59" href="javascript: renderStore('Misiones')" title="Misiones">
+                                    <area shape="poly" coords="31,16, 29,24, 23,18, 15,26, 12,31, 18,33, 22,33, 28,32, 28,35, 28,39, 31,40, 39,40, 48,40, 50,34, 57,34, 67,22, 66,5, 61,0, 55,-1, 51,1, 50,7, 48,8, 45,2, 41,2, 41,11, 45,14, 49,16, 49,21, 48,25, 41,26, 37,25, 34,21" href="javascript: renderStore('Salta')" title="Salta">
+                                    <area shape="poly" coords="6,65, 12,69, 12,76, 18,77, 28,87, 29,94, 31,97, 27,97, 27,101, 21,99, 16,101, 12,100, 8,100, 7,107, 1,97, 1,93, 4,85, 4,74" href="javascript: renderStore('San Juan')" title="San Juan">
+                                    <area shape="poly" coords="72,58, 79,58, 85,58, 91,57, 95,57, 95,59, 94,64, 92,67, 90,70, 91,74, 91,77, 90,79, 90,83, 88,86, 84,90, 81,92, 79,100, 79,103, 81,105, 80,110, 76,114, 72,117, 68,118, 65,118, 66,114, 68,111, 71,108, 73,104, 71,100, 70,97, 71,92, 71,88, 73,82, 71,78, 72,73, 71,67, 72,63" href="javascript: renderStore('Santa Fe')" title="Santa Fe">
+                                    <!--<area shape="poly" coords="73,56, 73,50, 72,44, 72,37, 70,35, 63,36, 54,36, 49,41, 48,46, 49,50, 48,52, 46,55, 44,60, 45,62, 46,67, 46,71, 47,74, 51,74, 56,74, 62,75, 66,77, 68,79, 71,70" href="javascript: at(22)" title="Santiago del Estero">-->
+                                    <area shape="poly" coords="43,57, 44,53, 47,50, 47,47, 48,42, 47,40, 43,40, 40,41, 35,41, 30,41, 32,43, 34,46, 34,49, 34,52, 36,55, 38,57" href="javascript: renderStore('Tucumám')" title="Tucumán">
                             </map>
                             
 					</div>
@@ -74,8 +75,16 @@ var idioma='es';
                 </div>
 
                 <div class="row" style="position: absolute; top:24%; left:20rem;">
-                    <div id="demo" style="color:blue; width: 200px;">
+                    <div id="demo" style="color:brown; width: 200px;">
                     <h3>
+                    </div>
+
+                </div>
+
+                <div class="row" style="position: absolute; top:104%; left:3rem; ">
+                    <div id="datosTiendaMapa" style="color:brown; width: 400px;">
+                    
+
                     </div>
 
                 </div>

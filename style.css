@@ -570,16 +570,17 @@ left:30px;
 .listStore
 {
   font-size: 0.75 rem;
-  color: black;
+  color: blue;
+  text-decoration-line: underline;
   
 }
 
 .recuadro
 {
-  z-index: 0; 
+  z-index: -1; 
   position:absolute;
-  top:10%;
-  left: 3%;
+  top:4%;
+  left: 0%;
   height: 600px;
   width: 415px;
   background:transparent;
@@ -588,6 +589,7 @@ left:30px;
   border-radius: 20px;
   border-color: rgb(90, 91, 187); 
   background-color:white;
-  opacity: .25;
+  opacity: 0.25;
 
 }
+
