@@ -578,10 +578,10 @@ left:30px;
 {
   z-index: 0; 
   position:absolute;
-  top:9%;
+  top:10%;
   left: 3%;
   height: 600px;
-  width: 420px;
+  width: 415px;
   background:transparent;
   border:2px;
   border-style: solid;
