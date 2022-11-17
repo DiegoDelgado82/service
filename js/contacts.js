@@ -77,6 +77,7 @@ function removeOptions(ddl)
 
 
 async function findLocals() {
+  document.getElementById("datosTienda").innerHTML=""
     var localElegido = document.getElementById("Locales").value;
     let local = await getContacts();
     document.getElementById("Jefe").innerHTML=""
@@ -85,10 +86,56 @@ async function findLocals() {
         
         if(localElegido=== local.Punto + "-"+local.Nombre)
        {
+        
         document.getElementById("Jefe").innerHTML="<h3>"+local.Jefe+"</h3> <li><i class='fab fa-whatsapp'></i> "+"<a href='https://wa.me/54"+local.Celular+"'?text=Hola' target='_blank'>"+local.Celular+"</a></li><li><i class='fa fa-envelope'></i> "+local.Mail+"<ul>"
-       
+       datosTienda(Number(local.Punto))
     
        }
            
     });
+}
+
+
+async function getStore() {
+  let url = 'https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/main/tiendas.json';
+             
+  try {
+      let res = await fetch(url);
+      return await res.json();
+      
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+
+
+
+async function datosTienda(nro) {
+  
+  let tiendas = await getStore();
+  let leyenda="<h3>"+nro+"</h3><br>";
+  var xIndex=0;
+  var stores=[];
+  var provinces=[];
+
+  tiendas.forEach(tiendas => {
+     
+  if (Number(tiendas.Nro)===nro)
+      {
+          stores[xIndex]=tiendas.Nombre;
+          xIndex++;
+          document.getElementById("datosTienda").innerHTML= "<h4>Datos de la tienda "+tiendas.Nro+"-"+tiendas.Nombre+"</h4><ul><li>Dirección: "+tiendas.Direccion+ 
+          "</li><li>Provincia: "+ tiendas.Provincia+"</li><li>Localidad:"+tiendas.Localidad+"</li><li>Telefono: "+tiendas.Telefono + 
+          "</li><li>Líder de Tienda: "+tiendas.Lider+" </li> </ul>";
+          
+
+      }
+
+
+  
+    
+  });
+  
+
 }
