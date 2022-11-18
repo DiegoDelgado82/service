@@ -125,7 +125,7 @@ async function datosTienda(nro) {
       {
           stores[xIndex]=tiendas.Nombre;
           xIndex++;
-          document.getElementById("datosTienda").innerHTML= "<h4>Datos de la tienda "+tiendas.Nro+"-"+tiendas.Nombre+"</h4><ul><li>Dirección: "+tiendas.Direccion+ 
+          document.getElementById("datosTiendaMapa").innerHTML= "<h4>Datos de la tienda "+tiendas.Nro+"-"+tiendas.Nombre+"</h4><ul><li>Dirección: "+tiendas.Direccion+ 
           "</li><li>Provincia: "+ tiendas.Provincia+"</li><li>Localidad:"+tiendas.Localidad+"</li><li>Telefono: "+tiendas.Telefono + 
           "</li><li>Líder de Tienda: "+tiendas.Lider+" </li> </ul>";
           
