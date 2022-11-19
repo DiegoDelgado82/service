@@ -221,7 +221,8 @@ left:30px;
   color:black;
   font-size: 14px;
   text-align: center;
-  
+  overflow-wrap: break-word;
+  vertical-align:middle;
 }
 
 
@@ -230,9 +231,9 @@ left:30px;
   position:absolute;
   top:375px;
   left: 30px;
-  width: 351px;
-  text-align: center;
- 
+  width: 340px;
+ text-align: center;
+  
   font-size: 18px;
  
 }
@@ -252,6 +253,8 @@ left:30px;
   padding-top: 5px;
   color:black;
   font-size: 14px;
+  overflow-wrap: break-word;
+  vertical-align:middle;  
 
 }
 
