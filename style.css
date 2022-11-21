@@ -1,17 +1,25 @@
 body
 {
-  background-image: linear-gradient(to bottom right, #080808,#31e7de);
  
+  font-family: 'Rubik', sans-serif;
  
 }
  
  label
 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1em;
   text-align: center;
-  color:white;
+  color:black;
 }
+a{
+  font-family: 'Rubik', sans-serif;
+}
+
+button{
+  font-family: 'Rubik', sans-serif;
+}
+
 
 #divImagen
 {
@@ -68,7 +76,7 @@ body
 {
   z-index: 10;
 
-  height: 835px;
+  height: 800px;
 
 }
 
@@ -81,7 +89,7 @@ width: 300px;
 left:30px;
 }
 
-.logo
+.headerLogo
 {
   position: absolute;
   left:1rem;
@@ -89,6 +97,26 @@ left:30px;
   height: 100px;
   border-radius: 5px;
 }
+
+.logo
+{
+  position: absolute;
+  left:1rem;
+  top: 1.5rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.logoMap
+{
+  position: absolute;
+  left:0rem;
+  top: -2rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+
 
 .Titulo
 {
@@ -98,8 +126,20 @@ left:30px;
   top:160px;
   text-align: center;
   
-  color: #61dafb;
+  color: black;
   font-size:1.5em;
+
+}
+.instrucciones
+{
+  position: absolute;
+  width: 351px;
+  left:30px;
+  top:190px;
+  text-align: left;
+  
+  color: black;
+  font-size:0.8em;
 
 }
 
@@ -161,7 +201,7 @@ left:30px;
   text-align: center;
   
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -181,7 +221,8 @@ left:30px;
   color:black;
   font-size: 14px;
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
+  overflow-wrap: break-word;
+  vertical-align:middle;
 }
 
 
@@ -190,12 +231,19 @@ left:30px;
   position:absolute;
   top:375px;
   left: 30px;
-  width: 351px;
-  text-align: center;
- 
+  width: 340px;
+ text-align: center;
+  
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
+
+
+
+
+
+
+
 
 
 .DatoEmail
@@ -212,6 +260,8 @@ left:30px;
   padding-top: 5px;
   color:black;
   font-size: 14px;
+  overflow-wrap: break-word;
+  vertical-align:middle;  
 
 }
 
@@ -225,7 +275,7 @@ left:30px;
   text-align: center;
 
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -257,7 +307,7 @@ left:30px;
   text-align: center;
  
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
+ 
 }
 
 
@@ -489,27 +539,26 @@ left:30px;
   top: 680px;
   width: 351px;
   text-align: center;
-  color:white;
-  font-family: 'DM Sans', sans-serif;
+  color:black;
+  
   font-size: 16px;
 }
 
 .PiePagina
 {
   position: absolute;
-  top: 805px;
+  top: 780px;
   left:30px;
   width: 341px;
   text-align: center;
-  color:white;
-  font-size: 16px;
+  color:#2196F3;
+  font-size: 14px;
 }
-
 .Marca
 {
   position:absolute;
-  top:210px;
-  left:20px;
+  top:230px;
+  left:40px;
   height:30px;
   max-width: 130px;
   min-width: 130px;
@@ -517,7 +566,7 @@ left:30px;
   border-radius:5px;
   background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
   color:black;
-  border-color:white;
+  border-color:black;
   
   
   
@@ -527,15 +576,15 @@ left:30px;
 {
   position:absolute;
   z-index:20;
-  top:210px;
-  left:190px;
+  top:230px;
+  left:220px;
   height:30px;
   max-width: 150px;
   min-width: 150px;
   border-radius:5px;
   background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
   color:black;
-  border-color:white;
+  border-color:black;
   font-size: 14px;
     
   
@@ -546,4 +595,111 @@ left:30px;
   position:absolute;
   top:0px;
   left:-380px;
+}
+
+.listStore
+{
+  font-size: 0.75 rem;
+  color: blue;
+  text-decoration-line: underline;
+  
+}
+
+.recuadro
+{
+  z-index: -1; 
+  position:absolute;
+  top:4%;
+  left: 0%;
+  height: 600px;
+  width: 415px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: 0.25;
+
+}
+.recuadroStore
+{
+  z-index: -1; 
+  position:absolute;
+  top:4,05%;
+  left: 0%;
+  height: 600px;
+  width: 415px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: 0.25;
+
+}
+.botonHome
+{
+  z-index:20;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left:35rem;
+  top:-1.2rem;
+  text-align: center;
+  
+
+  border-radius: 80%;
+  background-color: white;
+}
+
+
+
+.bordeBotones
+{
+  z-index: 0; 
+  position:absolute;
+  top:180px;
+  left: 20px;
+  height: 320px;
+  width: 370px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: .25;
+
+  
+}
+
+
+.botonDash
+{
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  background-color: #3cd8d8;
+  border-radius: 5px;
+  border-width: 0ch;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  backdrop-filter:blur(20px);
+  padding-top: 5px; 
+  
+
+}
+
+
+.logoDash
+{
+  position: absolute;
+  left:1.4rem;
+  top: 1.5rem;
+  height: 120px;
+  border-radius: 10px;
 }
