@@ -239,6 +239,13 @@ left:30px;
 }
 
 
+
+
+
+
+
+
+
 .DatoEmail
 {
   position:absolute;
@@ -645,4 +652,54 @@ left:30px;
 
   border-radius: 80%;
   background-color: white;
+}
+
+
+
+.bordeBotones
+{
+  z-index: 0; 
+  position:absolute;
+  top:180px;
+  left: 20px;
+  height: 320px;
+  width: 370px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: .25;
+
+  
+}
+
+
+.botonDash
+{
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  background-color: #3cd8d8;
+  border-radius: 5px;
+  border-width: 0ch;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  backdrop-filter:blur(20px);
+  padding-top: 5px; 
+  
+
+}
+
+
+.logoDash
+{
+  position: absolute;
+  left:1.4rem;
+  top: 1.5rem;
+  height: 120px;
+  border-radius: 10px;
 }
