@@ -77,7 +77,7 @@ function removeOptions(ddl)
 
 
 async function findLocals() {
-  document.getElementById("datosTienda").innerHTML=""
+  document.getElementById("datosTiendaMapa").innerHTML=""
     var localElegido = document.getElementById("Locales").value;
     let local = await getContacts();
     document.getElementById("Jefe").innerHTML=""
@@ -87,7 +87,7 @@ async function findLocals() {
         if(localElegido=== local.Punto + "-"+local.Nombre)
        {
         
-        document.getElementById("Jefe").innerHTML="<h3>"+local.Jefe+"</h3> <li><i class='fab fa-whatsapp'></i> "+"<a href='https://wa.me/54"+local.Celular+"'?text=Hola' target='_blank'>"+local.Celular+"</a></li><li><i class='fa fa-envelope'></i> "+local.Mail+"<ul>"
+        document.getElementById("Jefe").innerHTML="<h3 class='h3Jefe'>"+local.Jefe+"</h3> <li><i class='fab fa-whatsapp'></i> "+"<a href='https://wa.me/54"+local.Celular+"'?text=Hola' target='_blank'>"+local.Celular+"</a></li><li><i class='fa fa-envelope'></i> "+local.Mail+"<ul>"
        datosTienda(Number(local.Punto))
     
        }
@@ -139,3 +139,5 @@ async function datosTienda(nro) {
   
 
 }
+
+
