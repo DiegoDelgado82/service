@@ -21,16 +21,20 @@ async function getStore() {
     {
        document.getElementById("demo").innerHTML=""
        document.getElementById("cmbBsAs").hidden=false;
+       document.getElementById("cmbGba").hidden=true;
       
        if (document.getElementById("cmbBsAs").value==="GBA")
        {
         document.getElementById("cmbGba").hidden=false
+       
+
        }
        else
        {
         tiendas.forEach(tiendas => {
-            if (tiendas.Provincia===sto && document.getElementById("cmbBsAs").value!="Partido")
+            if (tiendas.Provincia===sto && document.getElementById("cmbBsAs").value!="Partido"&& tiendas.Localidad==="Provincia")
                 {
+                    
                     stores[xIndex]=tiendas.Nombre;
                     leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
                     xIndex++;
@@ -41,12 +45,14 @@ async function getStore() {
             });
             document.getElementById("demo").innerHTML =leyenda+ "</ul>"
        }
-       
+      
     }
     else
     {
         document.getElementById("cmbBsAs").hidden=true;
+        document.getElementById("cmbBsAs").value="Partido"
         document.getElementById("cmbGba").hidden=true;
+       
         tiendas.forEach(tiendas => {
         if (tiendas.Provincia===sto)
             {
