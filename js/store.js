@@ -17,20 +17,49 @@ async function getStore() {
     var xIndex=0;
     var stores=[];
     var provinces=[];
-
-    tiendas.forEach(tiendas => {
-    if (tiendas.Provincia===sto)
-        {
-            stores[xIndex]=tiendas.Nombre;
-            leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
-            xIndex++;
-        }
-
-    
+    if (sto=="Buenos Aires")
+    {
+       document.getElementById("demo").innerHTML=""
+       document.getElementById("cmbBsAs").hidden=false;
       
-    });
-    document.getElementById("demo").innerHTML =leyenda+ "</ul>"
+       if (document.getElementById("cmbBsAs").value==="GBA")
+       {
+        document.getElementById("cmbGba").hidden=false
+       }
+       else
+       {
+        tiendas.forEach(tiendas => {
+            if (tiendas.Provincia===sto && document.getElementById("cmbBsAs").value!="Partido")
+                {
+                    stores[xIndex]=tiendas.Nombre;
+                    leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
+                    xIndex++;
+                }
     
+            
+            
+            });
+            document.getElementById("demo").innerHTML =leyenda+ "</ul>"
+       }
+       
+    }
+    else
+    {
+        document.getElementById("cmbBsAs").hidden=true;
+        document.getElementById("cmbGba").hidden=true;
+        tiendas.forEach(tiendas => {
+        if (tiendas.Provincia===sto)
+            {
+                stores[xIndex]=tiendas.Nombre;
+                leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
+                xIndex++;
+            }
+
+        
+        
+        });
+        document.getElementById("demo").innerHTML =leyenda+ "</ul>"
+    }
   
   }
   
@@ -52,7 +81,7 @@ async function getStore() {
             stores[xIndex]=tiendas.Nombre;
             xIndex++;
             document.getElementById("datosTienda").innerHTML= "<h4>Datos de la tienda "+tiendas.Nro+"-"+tiendas.Nombre+"</h4><ul><li>Dirección: "+tiendas.Direccion+ 
-            "</li><li>Provincia: "+ tiendas.Provincia+"</li><li>Localidad:"+tiendas.Localidad+"</li><li>Telefono: "+tiendas.Telefono + 
+            "</li><li>Provincia: "+ tiendas.Provincia+"</li><li>Telefono: "+tiendas.Telefono + 
             "</li><li>Líder de Tienda: "+tiendas.Lider+" </li> </ul>";
             
 
