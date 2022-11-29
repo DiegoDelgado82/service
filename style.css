@@ -746,3 +746,11 @@ left:30px;
   top:100px;
   left:280px;
 }
+
+
+#provincia
+{
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
