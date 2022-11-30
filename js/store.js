@@ -36,7 +36,7 @@ async function getStore() {
                 {
                     
                     stores[xIndex]=tiendas.Nombre;
-                    leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
+                    leyenda= leyenda+'<li style="cursor: grab" onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
                     xIndex++;
                 }
     
@@ -57,7 +57,7 @@ async function getStore() {
         if (tiendas.Provincia===sto)
             {
                 stores[xIndex]=tiendas.Nombre;
-                leyenda= leyenda+'<li  onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
+                leyenda= leyenda+'<li style="cursor: grab" onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
                 xIndex++;
             }
 
