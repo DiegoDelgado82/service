@@ -83,11 +83,7 @@ var idioma='es';
                             <select id = "cmbGba" class="cmbGba" hidden onchange=renderStore(cmbProvincia.value);>
                                 <option selected >Zona</option>
                                 <option value='NORTE'>Norte</option>
-                                <option value='NORDESTE'>Nordeste</option>
-                                <option value='NOROESTE'>Noroeste</option>
                                 <option value='SUR'>Sur</option>
-                                <option value='SUROESTE'>Suroeste</option>
-                                <option value='ESTE'>Este</option>
                                 <option value='OESTE'>Oeste</option>
 
                             </select>
@@ -95,7 +91,7 @@ var idioma='es';
                         <div id="mapa" >
                             <br>
                             <!--Pasar las coordenadas del mapa a un json-->
-                            <img src="img/argentina.png" width="143" height="318" usemap="#Map" >
+                            <img id= "imagenMapa"src="img/argentina.png" width="143" height="318" usemap="#Map" >
                              <!--<map name="Map">
                                     <area shape="poly" coords="67,183, 61,180, 62,174, 60,167, 62,155, 61,146, 59,140, 60,131, 60,123, 60,119, 66,119, 72,120, 75,117, 80,113, 83,111, 91,113, 95,115, 97,122, 104,123, 108,127, 107,132, 108,137, 111,139, 110,145, 109,148, 105,152, 102,157, 98,160, 90,162, 84,163, 76,163, 72,163, 72,168, 72,173, 71,179" href="javascript: renderStore('BuenosAires_')" title="Buenos Aires">
                                     <area shape="poly" coords="96,115, 97,121, 104,122, 101,120, 100,115" href="javascript: renderStore('CABA_')" title="Ciudad Autónoma de Buenos Aires">

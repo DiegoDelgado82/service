@@ -11,6 +11,7 @@ async function getStore() {
   }
 
   async function renderStore(sto) {
+    mostrarMapa(sto);
     document.getElementById("datosTiendaMapa").innerHTML=""
     let tiendas = await getStore();
     let leyenda="<h3>"+sto+"</h3><br>";
@@ -26,9 +27,23 @@ async function getStore() {
        if (document.getElementById("cmbBsAs").value==="GBA")
        {
         document.getElementById("cmbGba").hidden=false
-       
+       // continuar para que busque por zona
+      
+       tiendas.forEach(tiendas => {
+        if (tiendas.Provincia==="Buenos Aires" && tiendas.Zona===document.getElementById("cmbGba").value)
+            {
+                
+                stores[xIndex]=tiendas.Nombre;
+                leyenda= leyenda+'<li style="cursor: grab" onclick=datosTienda('+tiendas.Nro+') class="listStore">'+stores[xIndex]+'</li> '  
+                xIndex++;
+            }
 
-       }
+        
+        
+        });
+        document.getElementById("demo").innerHTML =leyenda+ "</ul>"
+    }
+
        else
        {
         tiendas.forEach(tiendas => {
@@ -99,4 +114,94 @@ async function getStore() {
     });
     
   
+  }
+
+  function mostrarMapa(provincia)
+  {
+    switch (provincia) {
+
+            case 'Buenos Aires':
+                document.getElementById("imagenMapa").src="./img/provincias/BuenosAires.png"
+                break;
+            case 'CABA':
+                document.getElementById("imagenMapa").src="./img/provincias/CABA.png"
+                break;
+            case 'Catamarca':
+                document.getElementById("imagenMapa").src="./img/provincias/Catamarca.png"
+                break;
+            case 'Chaco':
+                document.getElementById("imagenMapa").src="./img/provincias/Chaco.png"
+                break;
+            case 'Chubut':
+                document.getElementById("imagenMapa").src="./img/provincias/Chubut.png"
+                break;
+            case 'Córdoba':
+                document.getElementById("imagenMapa").src="./img/provincias/Cordoba.png"
+                break;
+            case 'Corrientes':
+                document.getElementById("imagenMapa").src="./img/provincias/Corrientes.png"
+                break;
+            case 'Entre Ríos':
+                document.getElementById("imagenMapa").src="./img/provincias/EntreRios.png"
+                break;
+            case 'Formosa':
+                document.getElementById("imagenMapa").src="./img/provincias/Formosa.png"
+                break;
+            case 'Jujuy':
+                document.getElementById("imagenMapa").src="./img/provincias/Jujuy.png"
+                break;
+            case 'La Pampa':
+                document.getElementById("imagenMapa").src="./img/provincias/LaPampa.png"
+                break;
+            case 'La Rioja':
+                document.getElementById("imagenMapa").src="./img/provincias/LaRioja.png"
+                break;
+            case 'Mendoza':
+                document.getElementById("imagenMapa").src="./img/provincias/Mendoza.png"
+                break;
+            case 'Misiones':
+                document.getElementById("imagenMapa").src="./img/provincias/Misiones.png"
+                break;
+            case 'Neuquén':
+                document.getElementById("imagenMapa").src="./img/provincias/Neuquen.png"
+                break;
+            case 'Río Negro':
+                document.getElementById("imagenMapa").src="./img/provincias/RioNegro.png"
+                break;
+            case 'Salta':
+                document.getElementById("imagenMapa").src="./img/provincias/Salta.png"
+                break;
+            case 'San Juan':
+                document.getElementById("imagenMapa").src="./img/provincias/SanJuan.png"
+                break;
+            case 'San Luis':
+                document.getElementById("imagenMapa").src="./img/provincias/SanLuis.png"
+                break;
+            case 'Santa Cruz':
+                document.getElementById("imagenMapa").src="./img/provincias/SantaCruz.png"
+                break;
+            case 'Santa Fe':
+                document.getElementById("imagenMapa").src="./img/provincias/SantaFe.png"
+                break;
+            case 'Tierra del Fuego':
+                document.getElementById("imagenMapa").src="./img/provincias/TierraFuego.png"
+                break;
+            case 'Tucumán':
+                document.getElementById("imagenMapa").src="./img/provincias/Tucuman.png"
+                break;
+            
+        default:
+            document.getElementById("imagenMapa").src="./img/argentina.png"
+          
+        
+      }
+      
+
+
+  }
+
+
+  function busquedaPorZona(zona)
+  {
+    
   }
