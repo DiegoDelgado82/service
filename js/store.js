@@ -201,7 +201,29 @@ async function getStore() {
   }
 
 
-  function busquedaPorZona(zona)
+  function selectorCategorias(cate)
   {
+    alert(cate);
+    const gae =document.getElementsByClassName("gae");
+    const tecnologia =document.getElementsByClassName("tecnologia");
+    const garantia = document.getElementsByClassName("garantia");
     
-  }
+    switch (cate) {
+
+        case "gae":
+                    gae.style.visibility="visible";
+                    break;
+        case "tecnologia":
+                    tecnologia.style.display="block";
+                    break;
+        case "garantia":
+                    garantia.style.visibility="visible";
+                    break;
+        default:
+                    break;
+
+    }
+    
+    
+    
+    }

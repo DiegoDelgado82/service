@@ -51,19 +51,20 @@ var idioma='es';
                             <h4 style="position: absolute; top:125px; left:100px; ">Director</h4>
                             <p style="position: absolute; top:155px; left:100px; "><i class='fa fa-envelope'></i> matias_madrid_paez@carrefour.com</p>
                             <p style="position: absolute; top:175px; left:100px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541137009289'  target='_blank'> 1137009289</a></p>
-
+ 
+                            <select id = "cate" class="cate"  style="position: absolute; top:220px; left:50px; " onchange="selectorCategorias(cate.value)">
+                                <option value='Local' >Categoría</option>
+                                <option value='tecnologia'>Imágen, Telefonía, Informática, Sonido</option>
+                                <option value='gae'>Pae, Gae, Temporada</option>
+                                <option value='garantia'>Gaming, Garantías</option>
+                                </select>
+     
 
                         </div>   
 
                         
-                        <div id="contacts" style="position: absolute; top:220px; width: 400px;">
-                            <select id = "Locales" class="Locales"  >
-                            <option value='Local'>Categoría</option>
-                            <option value='Local'>Tecnología, Informática, Sonido</option>
-                            <option value='Local'>Pae, Gae, Temporada</option>
-                            <option value='Local'>Gaming, Garantías</option>
-                            </select>
-                          
+                        <div class="gae" style="position: absolute; top:220px; width: 400px; visibility: hidden;" >
+                                                     
                             <label class="fotoSede2" style="position: absolute; top:50px;left:10px;"></label>
                             <h4 style="position: absolute; top:40px;left:75px; width: 250px;">Gimena García</h4>
                             <h5 style="position: absolute; top:60px; left:75px; ">Gerente PAE, GAE, Temporada</h5>
@@ -71,15 +72,89 @@ var idioma='es';
                             <p style="position: absolute; top: 110px; left:75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541166215294'  target='_blank'> 1166215294</a></p>                          
                         </div>
 
-                        <div id="contacts" style="position: absolute; top:340px;left: 30px; width: 400px;">
+                        <div class="gae" style="position: absolute; top:320px;left: 60px; width: 400px;visibility: hidden;">
                                                      
-                            <label class="fotoSede3" style="position: absolute; top:50px;left:10px;"></label>
-                            <h5 style="position: absolute; top:40px;left:50px; width: 250px;">Vanesa Comas</h5>
-                            <h6 style="position: absolute; top:55px; left:55px; ">Jefa GAE</h6>
-                            <p style="position: absolute; top:75px; left:55px; "><i class='fa fa-envelope'></i> vanesa_comas@carrefour.com</p>
-                            <p style="position: absolute; top: 90px; left:55px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541137009289'  target='_blank'> 1137009289</a></p>                          
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Vanesa Comas</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefa GAE</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> vanesa_comas@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541137009289'  target='_blank'> 1137009289</a></p>                          
                         </div>
 
+                        <div class="gae" style="position: absolute; top:400px;left: 60px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Julieta Przytula</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefa PAE</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> julieta_przytula@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541133043898'  target='_blank'> 1133043898</a></p>                          
+                        </div>
+
+                        <div class="gae" style="position: absolute; top:480px;left: 60px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Guillermo López</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefe Temporada</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> guillermo_lopez@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541127489932'  target='_blank'> 1127489932</a></p>                          
+                        </div>
+
+                        <div class="tecnologia" style="position: absolute; top:220px; width: 400px; visibility: hidden;" >
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:10px;"></label>
+                            <h4 style="position: absolute; top:40px;left:75px; width: 250px;">Adrian Gallardo</h4>
+                            <h5 style="position: absolute; top:60px; left:75px; ">Gerente Tecnología</h5>
+                            <p style="position: absolute; top:90px; left:75px; "><i class='fa fa-envelope'></i> adrian_gallardo@carrefour.com</p>
+                            <p style="position: absolute; top: 110px; left:75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541158786978'  target='_blank'> 1158786978</a></p>                          
+                        </div>
+
+                        <div class="tecnologia" style="position: absolute; top:320px;left: 60px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Leonel Fernandez</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefe Tecnología</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> leonel_fernandez@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541127489935'  target='_blank'> 1127489935</a></p>                          
+                        </div>
+
+                        <div class="tecnologia" style="position: absolute; top:400px;left: 60px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Walter Palacios</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefe de Informática</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> walter_palacios@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541131677263'  target='_blank'> 1131677263</a></p>                          
+                        </div>
+
+                        <div class="tecnologia" style="position: absolute; top:480px;left: 60px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Hernán Arce</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefe de Sonido y Lay Out</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> hernan_arce@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541158802216'  target='_blank'> 1158802216</a></p>                          
+                        </div>
+
+
+                        <div class="garantia" style="position: absolute; top:220px; width: 400px; left:-5px;visibility: hidden;" >
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:10px;"></label>
+                            <h4 style="position: absolute; top:40px;left:75px; width: 250px;">Santiago Vignolo</h4>
+                            <h5 style="position: absolute; top:60px; left:75px; ">Gerente Gaming, Garantías, Com. Exterior</h5>
+                            <p style="position: absolute; top:90px; left:75px; "><i class='fa fa-envelope'></i> santiago_vignolo@carrefour.com</p>
+                            <p style="position: absolute; top: 110px; left:75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541160530460'  target='_blank'> 1160530460</a></p>                          
+                        </div>
+
+                        <div class="garantia" style="position: absolute; top:320px;left: 20px; width: 400px;visibility: hidden;">
+                                                     
+                            <label class="fotoSede2" style="position: absolute; top:50px;left:0px;"></label>
+                            <h5 style="position: absolute; top:40px;left:75px; width: 250px;">Pedro Ginesta</h5>
+                            <h6 style="position: absolute; top:55px; left:75px; ">Jefe Gaming, Accesorios, Garantia Extendida</h6>
+                            <p style="position: absolute; top:75px; left:75px; "><i class='fa fa-envelope'></i> pedro_nehuen_ginesta@carrefour.com</p>
+                            <p style="position: absolute; top: 90px; left: 75px; "><i class='fab fa-whatsapp'></i><a href='https://wa.me/541154018831'  target='_blank'> 1154018831</a></p>                          
+                        </div>
+
+                        
 
 
 

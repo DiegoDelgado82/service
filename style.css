@@ -764,12 +764,12 @@ left:30px;
   position:absolute;
   top:100px;
   left: 2%;
-  height: 100px;
+  height: 80px;
   width: 80px;
   background:transparent;
   border:2px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 80px;
   border-color: rgb(90, 91, 187); 
   background-color:white;
   opacity: 0.25;
@@ -782,29 +782,12 @@ left:30px;
   position:absolute;
   top:100px;
   left: 2%;
-  height: 75px;
+  height: 60px;
   width: 60px;
   background:transparent;
   border:2px;
   border-style: solid;
-  border-radius: 5px;
-  border-color: rgb(90, 91, 187); 
-  background-color:white;
-  opacity: 0.25;
-
-}
-.fotoSede3
-{
-  z-index: -1; 
-  position:absolute;
-  top:100px;
-  left: 2%;
-  height: 50px;
-  width: 40px;
-  background:transparent;
-  border:2px;
-  border-style: solid;
-  border-radius: 5px;
+  border-radius: 80px;
   border-color: rgb(90, 91, 187); 
   background-color:white;
   opacity: 0.25;
