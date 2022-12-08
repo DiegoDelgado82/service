@@ -210,6 +210,7 @@ async function getStore() {
     switch (cate) {
 
         case "gae":
+<<<<<<< HEAD
             document.getElementsByClassName("gae").hidden=false;
                     break;
         case "tecnologia":
@@ -217,6 +218,33 @@ async function getStore() {
                     break;
         case "garantia":
             document.getElementsByClassName("garantia").hidden=false;
+                    targList = document.getElementsByClassName("gae");
+                    document.getElementsByClassName("gae")
+                    if (targList) {
+                                 for (var x = 0; x < targList.length; x++) {
+                                 targList[x].style.visibility = "visible";
+                                }
+                    }                   
+                    break;
+        case "tecnologia":
+                    targList = document.getElementsByClassName("tecnologia");
+                    document.getElementsByClassName("tecnologia")
+                    if (targList) {
+                                for (var x = 0; x < targList.length; x++) {
+                                targList[x].style.visibility = "visible";
+                                }
+                    }
+                    break;
+        case "garantia":
+                        targList = document.getElementsByClassName("garantia");
+                        document.getElementsByClassName("garantia")
+                        if (targList) {
+                                    for (var x = 0; x < targList.length; x++) {
+                                    targList[x].style.visibility = "visible";
+                                    }
+                        }
+                    break;
+        default:
                     break;
         
 
