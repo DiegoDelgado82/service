@@ -204,20 +204,33 @@ async function getStore() {
   function selectorCategorias(cate)
   {
     
-    
+    targList = document.getElementsByClassName("gae");
+                    document.getElementsByClassName("gae")
+                    if (targList) {
+                                 for (var x = 0; x < targList.length; x++) {
+                                 targList[x].style.visibility = "hidden";
+                                }
+                    }                   
+    targList2 = document.getElementsByClassName("tecnologia");
+                    document.getElementsByClassName("tecnologia")
+                    if (targList2) {
+                                 for (var x = 0; x < targList2.length; x++) {
+                                 targList2[x].style.visibility = "hidden";
+                                }
+                    }                   
+    targList3 = document.getElementsByClassName("garantia");
+                    document.getElementsByClassName("garantia")
+                    if (targList3) {
+                                 for (var x = 0; x < targList3.length; x++) {
+                                 targList3[x].style.visibility = "hidden";
+                                }
+                    }                   
    
     
     switch (cate) {
 
         case "gae":
-<<<<<<< HEAD
             document.getElementsByClassName("gae").hidden=false;
-                    break;
-        case "tecnologia":
-            document.getElementsByClassName("tecnologia").hidden=false;
-                    break;
-        case "garantia":
-            document.getElementsByClassName("garantia").hidden=false;
                     targList = document.getElementsByClassName("gae");
                     document.getElementsByClassName("gae")
                     if (targList) {
