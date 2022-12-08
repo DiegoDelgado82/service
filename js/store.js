@@ -203,24 +203,22 @@ async function getStore() {
 
   function selectorCategorias(cate)
   {
-    alert(cate);
-    const gae =document.getElementsByClassName("gae");
-    const tecnologia =document.getElementsByClassName("tecnologia");
-    const garantia = document.getElementsByClassName("garantia");
+    
+    
+   
     
     switch (cate) {
 
         case "gae":
-                    gae.style.visibility="visible";
+            document.getElementsByClassName("gae").hidden=false;
                     break;
         case "tecnologia":
-                    tecnologia.style.display="block";
+            document.getElementsByClassName("tecnologia").hidden=false;
                     break;
         case "garantia":
-                    garantia.style.visibility="visible";
+            document.getElementsByClassName("garantia").hidden=false;
                     break;
-        default:
-                    break;
+        
 
     }
     
