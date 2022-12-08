@@ -203,21 +203,58 @@ async function getStore() {
 
   function selectorCategorias(cate)
   {
-    alert(cate);
-    const gae =document.getElementsByClassName("gae");
-    const tecnologia =document.getElementsByClassName("tecnologia");
-    const garantia = document.getElementsByClassName("garantia");
+    
+    targList = document.getElementsByClassName("gae");
+                    document.getElementsByClassName("gae")
+                    if (targList) {
+                                 for (var x = 0; x < targList.length; x++) {
+                                 targList[x].style.visibility = "hidden";
+                                }
+                    }  
+                    
+    targList2 = document.getElementsByClassName("tecnologia");
+                    document.getElementsByClassName("gae")
+                    if (targList2) {
+                                 for (var x = 0; x < targList2.length; x++) {
+                                 targList2[x].style.visibility = "hidden";
+                                }
+                    } 
+    targList3 = document.getElementsByClassName("garantia");
+                    document.getElementsByClassName("gae")
+                    if (targList3) {
+                                 for (var x = 0; x < targList3.length; x++) {
+                                 targList3[x].style.visibility = "hidden";
+                                }
+                    }   
     
     switch (cate) {
 
         case "gae":
-                    gae.style.visibility="visible";
+                    targList = document.getElementsByClassName("gae");
+                    document.getElementsByClassName("gae")
+                    if (targList) {
+                                 for (var x = 0; x < targList.length; x++) {
+                                 targList[x].style.visibility = "visible";
+                                }
+                    }                   
                     break;
         case "tecnologia":
-                    tecnologia.style.display="block";
+                    targList = document.getElementsByClassName("tecnologia");
+                    document.getElementsByClassName("tecnologia")
+                    if (targList) {
+                                for (var x = 0; x < targList.length; x++) {
+                                targList[x].style.visibility = "visible";
+                                }
+                    }
                     break;
         case "garantia":
-                    garantia.style.visibility="visible";
+                        targList = document.getElementsByClassName("garantia");
+                        document.getElementsByClassName("garantia")
+                        if (targList) {
+                                    for (var x = 0; x < targList.length; x++) {
+                                    targList[x].style.visibility = "visible";
+                                    }
+                        }
                     break;
         default:
                     break;
