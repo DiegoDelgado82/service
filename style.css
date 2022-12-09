@@ -793,3 +793,13 @@ left:30px;
   
 
 }
+
+
+.footer
+{
+  position: absolute;
+  top:600px;
+  width: 300px;
+  left: 90px;
+  font-size: 14px;
+}
