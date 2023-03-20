@@ -1,0 +1,57 @@
+[{
+    "MARCA": "MARCA",
+    "CATEGORIA": "CATEGORIA",
+    "WEB": "",
+    "CORREO": "",
+    "TELEFONO": "",
+    "TELEFONO2": ""
+},
+{
+    "MARCA": "ACER",
+    "CATEGORIA": "MONITORES",
+    "WEB": "https://www.acer.com/ac/es/AR/content/home",
+    "CORREO": "https://www.acer.com/ac/es/AR/content/service-contact",
+    "TELEFONO": "0800-800-1610",
+    "TELEFONO2": "-"
+},
+{
+    "MARCA": "ACER",
+    "CATEGORIA": "PC NOTEBOOK",
+    "WEB": "https://www.acer.com/ac/es/AR/content/home",
+    "CORREO": "https://www.acer.com/ac/es/AR/content/service-contact",
+    "TELEFONO": "0800-800-1610",
+    "TELEFONO2": "-"
+},
+{
+    "MARCA": "AIWA",
+    "CATEGORIA": "AURICULARES",
+    "WEB": "https://www.aiwaelectronics.com.ar/",
+    "CORREO": "info@aiwaelectronics.com.ar",
+    "TELEFONO": "(011) 5365-6004",
+    "TELEFONO2": "0800 444 1212"
+},
+{
+    "MARCA": "AIWA",
+    "CATEGORIA": "PARLANTES",
+    "WEB": "https://www.aiwaelectronics.com.ar/",
+    "CORREO": "info@aiwaelectronics.com.ar",
+    "TELEFONO": "(011) 5365-6004",
+    "TELEFONO2": "0800 444 1212"
+},
+{
+    "MARCA": "ALHIAS",
+    "CATEGORIA": "CALOVENTOR",
+    "WEB": "https://www.alhias.com/",
+    "CORREO": "servicios@prexey.com",
+    "TELEFONO": "0810-220-0192",
+    "TELEFONO2": "(011) 6091-1336 int 2403"
+},
+{
+    "MARCA": "ALHIAS",
+    "CATEGORIA": "PAE COCCION",
+    "WEB": "https://www.alhias.com/",
+    "CORREO": "servicios@prexey.com",
+    "TELEFONO": "0810-220-0192",
+    "TELEFONO2": "(011) 6091-1336 int 2403"
+}
+]
