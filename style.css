@@ -803,3 +803,147 @@ left:30px;
   left: 90px;
   font-size: 14px;
 }
+
+#inpCuota
+{
+  width: 70px;
+}
+
+.pCuotas
+{
+  font-size: 2rem;
+
+}
+
+#pCuotas1
+{
+ position: absolute;
+ top:270px;
+ left: 15px;
+
+}
+
+#pCuotas2
+{
+ position: absolute;
+ top:340px;
+ left: 15px;
+
+}
+
+#pCuotas3
+{
+ position: absolute;
+ top:410px;
+ left: 15px;
+
+}
+
+#pCuotas4
+{
+ position: absolute;
+ top:470px;
+ left: 15px;
+
+}
+
+
+
+
+#pValorCuotas1
+{
+ position: absolute;
+ top:250px;
+ left: 125px;
+ font-size: 4rem;
+
+}
+
+#pValorCuotas2
+{
+ position: absolute;
+ top:320px;
+ left: 125px;
+ font-size: 4rem;
+
+}
+
+#pValorCuotas3
+{
+ position: absolute;
+ top:390px;
+ left: 125px;
+ font-size: 4rem;
+
+}
+
+
+#pValorCuotas4
+{
+ position: absolute;
+ top:450px;
+ left: 125px;
+ font-size: 4rem;
+
+}
+
+
+
+#pCantidadMeses1
+{
+ position: absolute;
+ top:270px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses2
+{
+ position: absolute;
+ top:340px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses3
+{
+ position: absolute;
+ top:410px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses4
+{
+ position: absolute;
+ top:470px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+
+#pComentarios
+{
+ position: absolute;
+ top:530px;
+ left: 15px;
+ font-size: 1.5rem;
+ 
+
+}
+#pDescripcion
+{
+border-color: #61dafb;
+border-width: 1px;
+background-color: #61dafb;
+border-radius: 5px;
+ width: 340px;
+ position: absolute;
+ text-align: center;
+ align-items: center;
+ top:215px;
+ left: 15px;
+ font-size: 1.7rem;
+ 
+
+}

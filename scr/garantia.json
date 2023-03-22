@@ -1,57 +1,33 @@
 [{
-    "MARCA": "MARCA",
-    "CATEGORIA": "CATEGORIA",
-    "WEB": "",
-    "CORREO": "",
-    "TELEFONO": "",
-    "TELEFONO2": ""
+    "EAN": 7798080415083,
+    "DESCRIPCION": "PC GFAST CI3 256GB 4GB",
+    "G24": 1000,
+    "G36": 2000,
+    "G48": 3000,
+    "G60": 4000
 },
 {
-    "MARCA": "ACER",
-    "CATEGORIA": "MONITORES",
-    "WEB": "https://www.acer.com/ac/es/AR/content/home",
-    "CORREO": "https://www.acer.com/ac/es/AR/content/service-contact",
-    "TELEFONO": "0800-800-1610",
-    "TELEFONO2": "-"
+    "EAN": 2,
+    "DESCRIPCION": "DESCRIPCION2",
+    "G24": 24200,
+    "G36": 36200,
+    "G48": 48200,
+    "G60": 60200
 },
 {
-    "MARCA": "ACER",
-    "CATEGORIA": "PC NOTEBOOK",
-    "WEB": "https://www.acer.com/ac/es/AR/content/home",
-    "CORREO": "https://www.acer.com/ac/es/AR/content/service-contact",
-    "TELEFONO": "0800-800-1610",
-    "TELEFONO2": "-"
+    "EAN": 3,
+    "DESCRIPCION": "DESCRIPCION3",
+    "G24": 24300,
+    "G36": 36300,
+    "G48": 48300,
+    "G60": 60300
 },
 {
-    "MARCA": "AIWA",
-    "CATEGORIA": "AURICULARES",
-    "WEB": "https://www.aiwaelectronics.com.ar/",
-    "CORREO": "info@aiwaelectronics.com.ar",
-    "TELEFONO": "(011) 5365-6004",
-    "TELEFONO2": "0800 444 1212"
-},
-{
-    "MARCA": "AIWA",
-    "CATEGORIA": "PARLANTES",
-    "WEB": "https://www.aiwaelectronics.com.ar/",
-    "CORREO": "info@aiwaelectronics.com.ar",
-    "TELEFONO": "(011) 5365-6004",
-    "TELEFONO2": "0800 444 1212"
-},
-{
-    "MARCA": "ALHIAS",
-    "CATEGORIA": "CALOVENTOR",
-    "WEB": "https://www.alhias.com/",
-    "CORREO": "servicios@prexey.com",
-    "TELEFONO": "0810-220-0192",
-    "TELEFONO2": "(011) 6091-1336 int 2403"
-},
-{
-    "MARCA": "ALHIAS",
-    "CATEGORIA": "PAE COCCION",
-    "WEB": "https://www.alhias.com/",
-    "CORREO": "servicios@prexey.com",
-    "TELEFONO": "0810-220-0192",
-    "TELEFONO2": "(011) 6091-1336 int 2403"
+    "EAN": 4,
+    "DESCRIPCION": "DESCRIPCION4",
+    "G24": 24400,
+    "G36": 36400,
+    "G48": 48400,
+    "G60": 60400
 }
 ]

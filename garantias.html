@@ -16,7 +16,7 @@
 
       </head>
 
-<script src="js/garantias.js"></script>
+
 
 <script>
 var idioma='es';
@@ -44,18 +44,51 @@ var idioma='es';
                             <button class="botonHome" onclick="location.href='dashboard.html'"><i class="fas fa-home"></i> </button>
                             <img class="logoMap" src="/img/banner.PNG" alt="Logo e-data" /> 
                             <label class="recuadro" ></label>
-                            <h1>Garantía extendida  </h1>
+                            <h1>Garantía extendida &nbsp;&nbsp;  </h1>
                             <p>Ingresá el código del producto:</p>
-                            <br>
+                            
                             <input type="number" id = "inpEan" class="inpEan"  ></input>
-                            <button id=" btnEan" onclick="buscarEan()">Consultar</button>
+                            <!--<button id=" btnEan" onclick="buscarEan()">Consultar</button>
+                            <button id=" btnBorrar" onclick="borrarProducto()">Borrar</button>-->
+                            <br><br>
+                            <p class="inpDatos">Precio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cuotas</p>
+                            <input type="number" id = "inpPrecio"  ></input>
+                            
+                            <input type="number" id = "inpCuota"  ></input>
+                            <button id=" btnBorrar" onclick="buscarEan()">Calcular</button>
+                            <br><br><br>
+                            <b><p id="pDescripcion">Descripcion del producto</p></b>
+                            
+                            <div id="div1">
+                                    <div  >
+                                        
+                                        <p id="pCuotas1" class="pCuotas">12 Cuotas</p>
+                                        <p id="pValorCuotas1">$1522</p>
+                                        <p id="pCantidadMeses1">60 meses</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <p id="pCuotas2" class="pCuotas">12 Cuotas</p>
+                                        <p id="pValorCuotas2">$1522</p>
+                                        <p id="pCantidadMeses2">48 meses</p>
+                                    </div>
+                                    <div>
+                                        <p id="pCuotas3" class="pCuotas">12 Cuotas</p>
+                                        <p id="pValorCuotas3">$1522</p>
+                                        <p id="pCantidadMeses3">36 meses</p>
+                                    </div>
+                                    <div>
+                                        <p id="pCuotas4" class="pCuotas">12 Cuotas</p>
+                                        <p id="pValorCuotas4">$1522</p>
+                                        <p id="pCantidadMeses4">24 meses</p>
+                                    </div>
 
-
-
-                            <!--Esta porción del código es temporal-->
-                            <br><br><br><br><br><br><br>
-                            <h1>En construcción  </h1>
-                            <!--Hasta acá-->
+                                    <div>
+                                        
+                                        <b><p id="pComentarios">Comentarios</p></b>
+                                    </div>
+                            </div>
+                              
                         </div>   
                        
                     
@@ -79,6 +112,6 @@ var idioma='es';
       </body>
       
      
-      
+      <script src="js/garantias.js"></script>
       
       </html>
