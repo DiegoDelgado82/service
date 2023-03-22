@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       </head>
 
@@ -45,21 +46,33 @@ var idioma='es';
                             <img class="logoMap" src="/img/banner.PNG" alt="Logo e-data" /> 
                             <label class="recuadro" ></label>
                             <h1>Garantía extendida &nbsp;&nbsp;  </h1>
-                            <p>Ingresá el código del producto:</p>
+                            <p id="pLabelEan">Ingresá el código del producto:</p>
                             
                             <input type="number" id = "inpEan" class="inpEan"  ></input>
                             <!--<button id=" btnEan" onclick="buscarEan()">Consultar</button>
                             <button id=" btnBorrar" onclick="borrarProducto()">Borrar</button>-->
                             <br><br>
-                            <p class="inpDatos">Precio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cuotas</p>
+                            <p id="inpDatosPrecio">Precio</p>
+                            <p id="inpDatosCuotas">Cuotas</p>
                             <input type="number" id = "inpPrecio"  ></input>
                             
-                            <input type="number" id = "inpCuota"  ></input>
-                            <button id=" btnBorrar" onclick="buscarEan()">Calcular</button>
+
+                            <select name="cuotas" id="inpCuota">
+                                <option value="1">1</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                              </select>
+                            
+                            <button id="btnCalcular" onclick="buscarEan()">Calcular</button>
                             <br><br><br>
                             <b><p id="pDescripcion">Descripcion del producto</p></b>
                             
                             <div id="div1">
+                                    <button id= "btnEye" onclick="mostarMontoGE()"><i class="fa fa-eye"></i></button>
+                                    
                                     <div  >
                                         
                                         <p id="pCuotas1" class="pCuotas">12 Cuotas</p>

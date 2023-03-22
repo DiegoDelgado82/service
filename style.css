@@ -804,10 +804,73 @@ left:30px;
   font-size: 14px;
 }
 
+
+#pLabelEan
+{
+  position: absolute;
+  top:70px
+}
+
+
+#inpEan
+{
+  position: absolute;
+  top:90px;
+  text-align: center;
+  width: 350px;
+  font-size: 2rem ;
+}
+
+#inpDatosCuotas
+{
+  position: absolute;
+  top:130px;
+  left: 220px;
+}
+
+#inpDatosPrecio
+{
+  
+  position: absolute;
+  top:130px;
+}
+
 #inpCuota
 {
+  position: absolute;
+  top: 150px;
+  left: 220px;
   width: 70px;
+  height: 34px;
+  font-size: 2rem ;
 }
+
+#inpPrecio
+{
+  position: absolute;
+  top: 150px;
+  width: 195px;
+  font-size: 2rem ;
+}
+
+#btnCalcular
+{
+  position: absolute;
+  top: 150px;
+  height: 34px;
+  left: 295px;
+}
+
+#btnEye
+{
+  position: absolute;
+  top:530px;
+  left: 340px;
+  font-size:12px
+}
+
+
+
 
 .pCuotas
 {
@@ -842,7 +905,7 @@ left:30px;
 #pCuotas4
 {
  position: absolute;
- top:470px;
+ top:480px;
  left: 15px;
 
 }
@@ -854,8 +917,12 @@ left:30px;
 {
  position: absolute;
  top:250px;
- left: 125px;
+ left: 120px;
  font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
 
 }
 
@@ -863,17 +930,26 @@ left:30px;
 {
  position: absolute;
  top:320px;
- left: 125px;
+ left: 120px;
  font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
 
 }
 
 #pValorCuotas3
 {
+ 
  position: absolute;
  top:390px;
- left: 125px;
+ left: 120px;
  font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
 
 }
 
@@ -881,9 +957,13 @@ left:30px;
 #pValorCuotas4
 {
  position: absolute;
- top:450px;
- left: 125px;
+ top:460px;
+ left: 120px;
  font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
 
 }
 
@@ -916,7 +996,7 @@ left:30px;
 #pCantidadMeses4
 {
  position: absolute;
- top:470px;
+ top:480px;
  left: 280px;
  font-size: 2rem;
 }
