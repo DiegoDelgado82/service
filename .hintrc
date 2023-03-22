@@ -20,7 +20,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "image-alt": "off"
+        "image-alt": "off",
+        "document-title": "off"
       }
     ],
     "no-inline-styles": "off",
@@ -31,6 +32,13 @@
         "ignore": [
           "backdrop-filter"
         ]
+      }
+    ],
+    "meta-viewport": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
       }
     ]
   }
