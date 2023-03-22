@@ -100,7 +100,7 @@ async function buscarEan() {
 
 async function mostarMontoGE()
 {
-    alert("garant+ia 24: "+GE24 + " garantía 36: "+GE36 + " garantía 48: "+GE48 + " garantía 60: "+GE60)
+    alert("garantía 24: $"+GE24 + " garantía 36: $"+GE36 + " garantía 48: $"+GE48 + " garantía 60: $"+GE60)
     
 }
 
