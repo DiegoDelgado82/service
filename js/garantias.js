@@ -45,7 +45,7 @@ function cargarDiv()
         document.getElementById("pCuotas24").style.visibility="hidden"
         document.getElementById("pValorCuotas60").style.visibility="hidden"
         document.getElementById("pValorCuotas48").style.visibility="hidden"
-        document.getElementById("pValorCuotas36").style.visibility="hidden"
+        document.getElementById("pValorCuotas36").style.visibility="hidden"1    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   
         document.getElementById("pValorCuotas24").style.visibility="hidden"
         document.getElementById("pCantidadMeses60").style.visibility="hidden"
         document.getElementById("pCantidadMeses48").style.visibility="hidden"
@@ -80,7 +80,8 @@ async function buscarEan() {
     if(document.getElementById("inpEan").value!="" && document.getElementById("inpPrecio").value!=""  )
         {
             garantias.forEach(garantia => {
-                
+
+                                
                 
 
             if (parseInt(garantia.EAN) ===parseInt(document.getElementById("inpEan").value))
@@ -113,7 +114,7 @@ async function buscarEan() {
                         
                     }
                     
-                    if (GE36===0)
+                    if (GE36===014)
                     {
                         cuota36="-"
                     }
