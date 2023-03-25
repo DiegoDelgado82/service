@@ -891,6 +891,37 @@ left:30px;
   font-size:12px
 }
 
+#btnEye60
+{
+  position: absolute;
+  top:250px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye48
+{
+  position: absolute;
+  top:320px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye36
+{
+  position: absolute;
+  top:390px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye24
+{
+  position: absolute;
+  top:460px;
+  left: 340px;
+  font-size:12px
+}
 
 
 
@@ -900,7 +931,7 @@ left:30px;
 
 }
 
-#pCuotas1
+#pCuotas60
 {
  position: absolute;
  top:270px;
@@ -908,7 +939,7 @@ left:30px;
 
 }
 
-#pCuotas2
+#pCuotas48
 {
  position: absolute;
  top:340px;
@@ -916,7 +947,7 @@ left:30px;
 
 }
 
-#pCuotas3
+#pCuotas36
 {
  position: absolute;
  top:410px;
@@ -924,7 +955,7 @@ left:30px;
 
 }
 
-#pCuotas4
+#pCuotas24
 {
  position: absolute;
  top:480px;
@@ -935,7 +966,7 @@ left:30px;
 
 
 
-#pValorCuotas1
+#pValorCuotas60
 {
  position: absolute;
  top:250px;
@@ -948,7 +979,7 @@ left:30px;
 
 }
 
-#pValorCuotas2
+#pValorCuotas48
 {
  position: absolute;
  top:320px;
@@ -961,7 +992,7 @@ left:30px;
 
 }
 
-#pValorCuotas3
+#pValorCuotas36
 {
  
  position: absolute;
@@ -976,7 +1007,7 @@ left:30px;
 }
 
 
-#pValorCuotas4
+#pValorCuotas24
 {
  position: absolute;
  top:460px;
@@ -991,7 +1022,7 @@ left:30px;
 
 
 
-#pCantidadMeses1
+#pCantidadMeses60
 {
  position: absolute;
  top:270px;
@@ -999,7 +1030,7 @@ left:30px;
  font-size: 2rem;
 }
 
-#pCantidadMeses2
+#pCantidadMeses48
 {
  position: absolute;
  top:340px;
@@ -1007,7 +1038,7 @@ left:30px;
  font-size: 2rem;
 }
 
-#pCantidadMeses3
+#pCantidadMeses36
 {
  position: absolute;
  top:410px;
@@ -1015,7 +1046,7 @@ left:30px;
  font-size: 2rem;
 }
 
-#pCantidadMeses4
+#pCantidadMeses24
 {
  position: absolute;
  top:480px;
@@ -1049,5 +1080,14 @@ border-radius: 5px;
  left: 15px;
  font-size: 1.7rem;
  
+}
+
+#chkG60
+{
+  position: absolute;
+  top: 250px;
+  left:350px;
+  height: 20px;
+  width: 20px;
 
 }

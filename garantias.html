@@ -70,35 +70,41 @@ var idioma='es';
                             
                             <button id="btnCalcular" onclick="buscarEan()">Calcular</button>
                             <br><br><br>
-                            <b><p id="pDescripcion"></p></b>
+                            
                             <div id="divImagen">
                                 <img src="./img/logo.png" id="imagenEdata" alt="logo e-data">
                                 
                             </div>   
                             <div id="div1">
+                                    <button id= "btnEye60" onclick="ocultarOpcionGe(60)"><i class="fa fa-eye-slash"></i></button>
+                                    <button id= "btnEye48" onclick="ocultarOpcionGe(48)"><i class="fa fa-eye-slash"></i></button>
+                                    <button id= "btnEye36" onclick="ocultarOpcionGe(36)"><i class="fa fa-eye-slash"></i></button>
+                                    <button id= "btnEye24" onclick="ocultarOpcionGe(24)"><i class="fa fa-eye-slash"></i></button>
+
                                     <button id= "btnEye" onclick="mostarMontoGE()"><i class="fa fa-eye"></i></button>
                                     <button id="btnReConsultar" onclick="cargarDiv()">Buscar de Nuevo</button>
-                                    <div  >
-                                        
-                                        <p id="pCuotas1" class="pCuotas"></p>
-                                        <p id="pValorCuotas1"></p>
-                                        <p id="pCantidadMeses1">60 meses</p>
+                                    <div>
+                                       
+                                        <b><p id="pDescripcion"></p></b>
+                                        <p id="pCuotas60" class="pCuotas"></p>
+                                        <p id="pValorCuotas60" onclick="ocultarOpcionGe(60)"></p>
+                                        <p id="pCantidadMeses60">60 meses</p>
                                     </div>
                                     
                                     <div>
-                                        <p id="pCuotas2" class="pCuotas"></p>
-                                        <p id="pValorCuotas2"></p>
-                                        <p id="pCantidadMeses2">48 meses</p>
+                                        <p id="pCuotas48" class="pCuotas"></p>
+                                        <p id="pValorCuotas48" onclick="ocultarOpcionGe(48)"></p>
+                                        <p id="pCantidadMeses48">48 meses</p>
                                     </div>
                                     <div>
-                                        <p id="pCuotas3" class="pCuotas"></p>
-                                        <p id="pValorCuotas3"></p>
-                                        <p id="pCantidadMeses3">36 meses</p>
+                                        <p id="pCuotas36" class="pCuotas"></p>
+                                        <p id="pValorCuotas36" onclick="ocultarOpcionGe(36)"></p>
+                                        <p id="pCantidadMeses36">36 meses</p>
                                     </div>
                                     <div>
-                                        <p id="pCuotas4" class="pCuotas"></p>
-                                        <p id="pValorCuotas4"></p>
-                                        <p id="pCantidadMeses4">24 meses</p>
+                                        <p id="pCuotas24" class="pCuotas"></p>
+                                        <p id="pValorCuotas24" onclick="ocultarOpcionGe(24)"></p>
+                                        <p id="pCantidadMeses24">24 meses</p>
                                     </div>
 
                                     <div>

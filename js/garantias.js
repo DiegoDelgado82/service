@@ -25,10 +25,10 @@ async function getGarantia() {
 function cargarDiv()
 {
 
-    document.getElementById("pCuotas1").textContent=document.getElementById("inpCuota").value +" Cuotas" 
-    document.getElementById("pCuotas2").textContent=document.getElementById("inpCuota").value +" Cuotas" 
-    document.getElementById("pCuotas3").textContent=document.getElementById("inpCuota").value +" Cuotas" 
-    document.getElementById("pCuotas4").textContent=document.getElementById("inpCuota").value +" Cuotas" 
+    document.getElementById("pCuotas60").textContent=document.getElementById("inpCuota").value +" Cuotas" 
+    document.getElementById("pCuotas48").textContent=document.getElementById("inpCuota").value +" Cuotas" 
+    document.getElementById("pCuotas36").textContent=document.getElementById("inpCuota").value +" Cuotas" 
+    document.getElementById("pCuotas24").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     
        if(x.style.visibility==="visible")
        {
@@ -39,6 +39,20 @@ function cargarDiv()
         document.getElementById("inpEan").focus();   
         x.style.visibility="hidden"
         y.style.visibility="visible"
+        document.getElementById("pCuotas60").style.visibility="hidden"
+        document.getElementById("pCuotas48").style.visibility="hidden"
+        document.getElementById("pCuotas36").style.visibility="hidden"
+        document.getElementById("pCuotas24").style.visibility="hidden"
+        document.getElementById("pValorCuotas60").style.visibility="hidden"
+        document.getElementById("pValorCuotas48").style.visibility="hidden"
+        document.getElementById("pValorCuotas36").style.visibility="hidden"
+        document.getElementById("pValorCuotas24").style.visibility="hidden"
+        document.getElementById("pCantidadMeses60").style.visibility="hidden"
+        document.getElementById("pCantidadMeses48").style.visibility="hidden"
+        document.getElementById("pCantidadMeses36").style.visibility="hidden"
+        document.getElementById("pCantidadMeses24").style.visibility="hidden"
+
+
        }
        else
        {
@@ -120,11 +134,23 @@ async function buscarEan() {
                     
                     
 
-                    document.getElementById("pValorCuotas1").textContent=cuota60
-                    document.getElementById("pValorCuotas2").textContent=cuota48
-                    document.getElementById("pValorCuotas3").textContent=cuota36
-                    document.getElementById("pValorCuotas4").textContent=cuota24
-
+                    document.getElementById("pValorCuotas60").textContent=cuota60
+                    document.getElementById("pValorCuotas48").textContent=cuota48
+                    document.getElementById("pValorCuotas36").textContent=cuota36
+                    document.getElementById("pValorCuotas24").textContent=cuota24
+                    document.getElementById("pCuotas60").style.visibility="visible"
+                    document.getElementById("pCuotas48").style.visibility="visible"
+                    document.getElementById("pCuotas36").style.visibility="visible"
+                    document.getElementById("pCuotas24").style.visibility="visible"
+                    document.getElementById("pValorCuotas60").style.visibility="visible"
+                    document.getElementById("pValorCuotas48").style.visibility="visible"
+                    document.getElementById("pValorCuotas36").style.visibility="visible"
+                    document.getElementById("pValorCuotas24").style.visibility="visible"
+                    document.getElementById("pCantidadMeses60").style.visibility="visible"
+                    document.getElementById("pCantidadMeses48").style.visibility="visible"
+                    document.getElementById("pCantidadMeses36").style.visibility="visible"
+                    document.getElementById("pCantidadMeses24").style.visibility="visible"
+                
 
                     bandera=1
                 }
@@ -154,5 +180,40 @@ async function mostarMontoGE()
 {
     alert("garantía 24: $"+GE24 + "\ngarantía 36: $"+GE36 + "\ngarantía 48: $"+GE48 + "\ngarantía 60: $"+GE60)
     
+}
+
+async function ocultarOpcionGe(ge)
+
+{
+    if (document.getElementById("pCuotas"+ge.toString()).style.visibility!="hidden")
+    {
+        document.getElementById("pCuotas"+ge.toString()).style.visibility="hidden"
+    }
+    else
+    {
+        document.getElementById("pCuotas"+ge.toString()).style.visibility="visible"
+    }
+
+    if(document.getElementById("pValorCuotas"+ge.toString()).style.visibility!="hidden")
+    {
+        document.getElementById("pValorCuotas"+ge.toString()).style.visibility="hidden"
+    }
+    else{
+        document.getElementById("pValorCuotas"+ge.toString()).style.visibility="visible"
+    }
+
+
+    if(document.getElementById("pCantidadMeses"+ge.toString()).style.visibility!="hidden")
+    {
+        document.getElementById("pCantidadMeses"+ge.toString()).style.visibility="hidden"
+        
+    }
+    else
+    {
+        document.getElementById("pCantidadMeses"+ge.toString()).style.visibility="visible"
+    }
+    
+    
+
 }
 
