@@ -45,7 +45,7 @@ function cargarDiv()
         document.getElementById("pCuotas24").style.visibility="hidden"
         document.getElementById("pValorCuotas60").style.visibility="hidden"
         document.getElementById("pValorCuotas48").style.visibility="hidden"
-        document.getElementById("pValorCuotas36").style.visibility="hidden"1    1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   
+        document.getElementById("pValorCuotas36").style.visibility="hidden"
         document.getElementById("pValorCuotas24").style.visibility="hidden"
         document.getElementById("pCantidadMeses60").style.visibility="hidden"
         document.getElementById("pCantidadMeses48").style.visibility="hidden"
