@@ -47,7 +47,7 @@ var idioma='es';
                             <button class="botonHome" onclick="location.href='dashboard.html'"><i class="fas fa-home"></i> </button>
                             <img class="logoMap" src="/img/banner.PNG" alt="Logo e-data" /> 
                             <label class="recuadro" ></label>
-                            <h1>Garantía extendida &nbsp;&nbsp;  </h1>
+                            <h1 id="tituloGE">Garantía Extendida &nbsp;&nbsp;  </h1>
                             <p id="pLabelEan">Ingresá el código del producto:</p>
                             
                             <input type="number" id = "inpEan" class="inpEan"  ></input>
@@ -74,7 +74,9 @@ var idioma='es';
                             <div id="divImagen">
                                 <img src="./img/logo.png" id="imagenEdata" alt="logo e-data">
                                 
-                            </div>   
+                            </div> 
+                            
+                            
                             <div id="div1">
                                    <!-- <button id= "btnEye60" onclick="ocultarOpcionGe(60)"><i class="fa fa-eye-slash"></i></button>
                                     <button id= "btnEye48" onclick="ocultarOpcionGe(48)"><i class="fa fa-eye-slash"></i></button>
@@ -106,6 +108,14 @@ var idioma='es';
                                         <p id="pValorCuotas24" onclick="ocultarOpcionGe(24)"></p>
                                         <p id="pCantidadMeses24">24 meses</p>
                                     </div>
+
+                                    <div>
+                                        <p id="pCuotas0" class="pCuotas"></p>
+                                        <p id="pValorCuotas0" onclick="ocultarOpcionGe(0)"></p>
+                                        <p id="pCantidadMeses0"></p>
+                                    </div>
+
+                                    
 
                                     <div>
                                         

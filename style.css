@@ -821,8 +821,8 @@ left:30px;
 {
   position: absolute;
   width: 150px;
-  height: 50px;
-  top:580px;
+  height: 40px;
+  top:600px;
   left:220px;
   border-radius: 5px;
 }
@@ -886,7 +886,7 @@ left:30px;
 #btnEye
 {
   position: absolute;
-  top:530px;
+  top:550px;
   left: 340px;
   font-size:12px
 }
@@ -963,6 +963,13 @@ left:30px;
 
 }
 
+#pCuotas0
+{
+ position: absolute;
+ top:550px;
+ left: 15px;
+
+}
 
 
 
@@ -1011,6 +1018,20 @@ left:30px;
 {
  position: absolute;
  top:460px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+#pValorCuotas0
+{
+ position: absolute;
+ z-index: 10;
+ top:530px;
  left: 120px;
  font-size: 4rem;
  text-align: center;
@@ -1090,4 +1111,9 @@ border-radius: 5px;
   height: 20px;
   width: 20px;
 
+}
+
+#tituloGE
+{
+  width: 355px;
 }

@@ -1,6 +1,6 @@
 
 
-let GE24, GE36, GE48, GE60
+let GE24, GE36, GE48, GE60;
 
 const path='./scr/garantia.json';
 let x = document.getElementById('div1');
@@ -24,11 +24,12 @@ async function getGarantia() {
 
 function cargarDiv()
 {
-
+    document.getElementById("tituloGE").textContent="Garantía Extendida"
     document.getElementById("pCuotas60").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas48").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas36").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas24").textContent=document.getElementById("inpCuota").value +" Cuotas" 
+    document.getElementById("pCuotas0").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     
        if(x.style.visibility==="visible")
        {
@@ -43,10 +44,12 @@ function cargarDiv()
         document.getElementById("pCuotas48").style.visibility="hidden"
         document.getElementById("pCuotas36").style.visibility="hidden"
         document.getElementById("pCuotas24").style.visibility="hidden"
+        document.getElementById("pCuotas0").style.visibility="hidden"
         document.getElementById("pValorCuotas60").style.visibility="hidden"
         document.getElementById("pValorCuotas48").style.visibility="hidden"
         document.getElementById("pValorCuotas36").style.visibility="hidden"
         document.getElementById("pValorCuotas24").style.visibility="hidden"
+        document.getElementById("pValorCuotas0").style.visibility="hidden"
         document.getElementById("pCantidadMeses60").style.visibility="hidden"
         document.getElementById("pCantidadMeses48").style.visibility="hidden"
         document.getElementById("pCantidadMeses36").style.visibility="hidden"
@@ -73,9 +76,11 @@ function cargarDiv()
 
 
 async function buscarEan() {
+    
     x.style.visibility="hidden"
     let garantias = await getGarantia();
     let bandera=0
+
 
     if(document.getElementById("inpEan").value!="" && document.getElementById("inpPrecio").value!=""  )
         {
@@ -92,6 +97,8 @@ async function buscarEan() {
                     GE36= garantia.G36
                     GE48= garantia.G48
                     GE60= garantia.G60
+
+                    cuota0="$"+Math.trunc(precio/cuota).toString()
                     
                     document.getElementById("pDescripcion").textContent=garantia.DESCRIPCION
                     if (GE60===0)
@@ -134,23 +141,27 @@ async function buscarEan() {
                     }
                     
                     
-
+                   
                     document.getElementById("pValorCuotas60").textContent=cuota60
                     document.getElementById("pValorCuotas48").textContent=cuota48
                     document.getElementById("pValorCuotas36").textContent=cuota36
                     document.getElementById("pValorCuotas24").textContent=cuota24
+                    document.getElementById("pValorCuotas0").textContent=cuota0
                     document.getElementById("pCuotas60").style.visibility="visible"
                     document.getElementById("pCuotas48").style.visibility="visible"
                     document.getElementById("pCuotas36").style.visibility="visible"
                     document.getElementById("pCuotas24").style.visibility="visible"
+                    document.getElementById("pCuotas0").style.visibility="visible"
                     document.getElementById("pValorCuotas60").style.visibility="visible"
                     document.getElementById("pValorCuotas48").style.visibility="visible"
                     document.getElementById("pValorCuotas36").style.visibility="visible"
                     document.getElementById("pValorCuotas24").style.visibility="visible"
+                    document.getElementById("pValorCuotas0").style.visibility="visible"
                     document.getElementById("pCantidadMeses60").style.visibility="visible"
                     document.getElementById("pCantidadMeses48").style.visibility="visible"
                     document.getElementById("pCantidadMeses36").style.visibility="visible"
                     document.getElementById("pCantidadMeses24").style.visibility="visible"
+                    
                 
 
                     bandera=1
@@ -166,6 +177,7 @@ async function buscarEan() {
             {
 
                 cargarDiv()
+                document.getElementById("tituloGE").textContent="La mejor Inversión"
             }
   
         }
