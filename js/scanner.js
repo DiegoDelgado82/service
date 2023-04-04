@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		$resultados.textContent = data.codeResult.code;
 		// Imprimimos todo el data para que puedas depurar
 		console.log(data);
-		ean= data.codeResult.code
-        buscarCuotas(ean)
+        alert(data)
+        buscarCuotas(data)
 
 	});
 
