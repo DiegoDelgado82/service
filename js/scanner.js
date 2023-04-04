@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		$resultados.textContent = data.codeResult.code;
 		// Imprimimos todo el data para que puedas depurar
 		console.log(data);
-        alert(data)
+        alert(data.codeResult.code)
         buscarCuotas(data)
 
 	});
