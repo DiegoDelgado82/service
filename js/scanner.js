@@ -23,7 +23,6 @@ async function getCuota() {
     let cuotas = await getCuota();
 
             cuotas.forEach(cuota => {
-                alert(eanEscaneado)
            
             if (parseInt(cuota.EAN) === parseInt(eanEscaneado))
                 {
