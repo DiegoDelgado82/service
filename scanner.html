@@ -1,59 +1,30 @@
-<link rel="stylesheet" href="style.css">
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
-    <title>Escáner de códigos de barras</title>
+    <meta name="viewport" content="width=device-width">
+    <title>App para verificar cuotas en el producto</title>
+    <link href="styleScanner.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Escáner de códigos de barras</h1>
-    <video id="camera" width="320" height="240"></video>
-    <button id="scanButton">Escanear código de barras</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
-    
-    <script>
-      var camera = document.getElementById("camera");
-      var scanButton = document.getElementById("scanButton");
-      var scanning = false;
-
-      Quagga.init(
-        {
-            
-          inputStream: {
-            name: "Live",
-            type: "LiveStream",
-            target: camera
-          },
-          decoder: {
-            readers: ["ean_reader"]
-          }
-        },
-        function(err) {
-          if (err) {
-            console.log(err);
-            return;
-          }
-          console.log("Quagga initialized");
-          Quagga.start();
-          alert("estoy")
-        }
-      );
-
-      Quagga.onDetected(function(data) {
-        console.log("Code detected", data.codeResult.code);
-        alert("codigo detectado")
-      });
-
-      scanButton.addEventListener("click", function() {
-        if (!scanning) {
-          Quagga.start();
-          scanning = true;
-        } else {
-          Quagga.stop();
-          scanning = false;
-        }
-      });
-    </script>
+		<img class="logo" src="/img/banner.PNG" alt="Logo e-data" /> 
+		<p id="tituloEan" >EAN</p>
+		<p id="descripcion"></p>
+		<p id="resultado"></p>
+		<p id="tituloCuotas">CUOTAS</p>
+		<p id="cuotas"></p>
+		<br>		<br>
+		<div id="contenedor"></div>
+		
+		<script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+    <script src="/js/scanner.js"></script>
   </body>
 </html>
