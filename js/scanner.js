@@ -14,7 +14,7 @@ async function getCuota() {
     } catch (error) {
         console.log(error);
     }
-    alert("cargo ok");
+   
   }
 
 
@@ -29,7 +29,9 @@ async function getCuota() {
 
             if (parseInt(cuota.EAN) === eanEscaneado)
                 {
-                    alert("Encontro ean")
+            
+                    document.getElementById('cuotas').textContent= cuota.CUOTAS+" Cuotas";
+			        document.getElementById('descripcion').textContent= cuota.DESCRIPCION;
                 }
                 
             
@@ -69,9 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	Quagga.onDetected((data) => {
 		$resultados.textContent = data.codeResult.code;
 		// Imprimimos todo el data para que puedas depurar
-		console.log(data);
-        alert(data.codeResult.code)
-        buscarCuotas(data)
+		
+        buscarCuotas(data.codeResult.code)
 
 	});
 
@@ -81,24 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-async function validarCuotas(ean)
-{
-   	let bandera=0
-	for (var k=0; k<datos.length;k++)
-	{
-		if (ean.toString()===datos[k][0].toString())
-			{
-			bandera=1;
-			navigator.vibrate(1000);
-			document.getElementById('cuotas').textContent= datos[k][1]+" Cuotas";
-			document.getElementById('descripcion').textContent= datos[k][2];
-			break;
-			}
-	}
-	if (bandera===0)
-		{	alert("No se encontró el producto en la base");
-			document.getElementById('cuotas').textContent= "";
-			document.getElementById('descripcion').textContent= "";		
-		}
-}
 
