@@ -1117,3 +1117,9 @@ aad
 {
   width: 355px;
 }
+
+#camera
+{
+  border: #61dafb;
+  border-style: double;
+}

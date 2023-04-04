@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +11,7 @@
     <video id="camera" width="320" height="240"></video>
     <button id="scanButton">Escanear código de barras</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    
     <script>
       var camera = document.getElementById("camera");
       var scanButton = document.getElementById("scanButton");
@@ -16,6 +19,7 @@
 
       Quagga.init(
         {
+            
           inputStream: {
             name: "Live",
             type: "LiveStream",
@@ -32,11 +36,13 @@
           }
           console.log("Quagga initialized");
           Quagga.start();
+          alert("estoy")
         }
       );
 
       Quagga.onDetected(function(data) {
         console.log("Code detected", data.codeResult.code);
+        alert("codigo detectado")
       });
 
       scanButton.addEventListener("click", function() {
