@@ -23,13 +23,11 @@ async function getCuota() {
     let cuotas = await getCuota();
 
             cuotas.forEach(cuota => {
-
-                                
-                
-
-            if (parseInt(cuota.EAN) === eanEscaneado)
+                alert(eanEscaneado)
+           
+            if (parseInt(cuota.EAN) === parseInt(eanEscaneado))
                 {
-            
+                    alert("encontro")
                     document.getElementById('cuotas').textContent= cuota.CUOTAS+" Cuotas";
 			        document.getElementById('descripcion').textContent= cuota.DESCRIPCION;
                 }
