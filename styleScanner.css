@@ -1,7 +1,7 @@
 #contenedor video{
 	position: absolute;
 	top:300px;
-	left:30px;
+	left:0px;
 	border-radius:4%;
 	border-style: solid;
 	border-color: red;
@@ -13,7 +13,7 @@
 #contenedor{
 	width: 100%;
 	max-width: 100%;
-        position: relative;
+    position: relative;
  	height: 500px;
 	
  
@@ -21,11 +21,7 @@
 canvas{
 	max-width: 100%;
 }
-canvas.drawingBuffer{
-	position:absolute;
-	top:300px;
-	left:0px;
-}
+
 
 
 #tituloEan
@@ -111,9 +107,16 @@ vertical-align: baseline;
 .logo
 {
   position: absolute;
- left:1rem;
+  left:1rem;
   
   top: 0 rem;
   height: 35px;
   border-radius: 5px;
+}
+
+
+canvas.drawingBuffer{
+	position:absolute;
+	top:300px;
+	left:0px;
 }

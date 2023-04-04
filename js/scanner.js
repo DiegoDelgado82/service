@@ -1,3 +1,43 @@
+
+
+async function getCuota() {
+    //let url = './scr/garantia.json';
+    let url="https://raw.githubusercontent.com/DiegoDelgado82/serviciotecnico/main/cuotas.json"
+               
+    try {
+        let res = await fetch(url);
+        return await res.json();
+        
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
+
+  async function buscarCuotas(eanEscaneado) {
+    
+    let cuotas = await getCuota();
+
+            cuotas.forEach(cuota => {
+
+                                
+                
+
+            if (parseInt(cuota.EAN) === eanEscaneado)
+                {
+                    alert("Encontro ean")
+                }
+                
+            
+            })
+            
+  
+  
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 	const $resultados = document.querySelector("#resultado");
 	Quagga.init({
@@ -26,7 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		$resultados.textContent = data.codeResult.code;
 		// Imprimimos todo el data para que puedas depurar
 		console.log(data);
-		validarCuotas(data.codeResult.code);
+		ean= data.codeResult.code
+        buscarCuotas(ean)
 
 	});
 
@@ -56,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function validarCuotas(ean)
+async function validarCuotas(ean)
 {
    	let bandera=0
 	for (var k=0; k<datos.length;k++)
