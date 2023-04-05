@@ -24,6 +24,7 @@ async function getGarantia() {
 
 function cargarDiv()
 {
+    document.getElementById("btnScanner").disabled = false;
     document.getElementById("tituloGE").textContent="Garantía Extendida"
     document.getElementById("pCuotas60").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas48").textContent=document.getElementById("inpCuota").value +" Cuotas" 
@@ -236,7 +237,7 @@ async function ocultarOpcionGe(ge)
 function activarScanner()
 {
 	
-	
+        document.getElementById("btnScanner").disabled = true;
 		const $resultados = document.querySelector("#resultado");
 		Quagga.init({
 			inputStream: {
@@ -270,7 +271,7 @@ function activarScanner()
             
             Quagga.stop();
             document.getElementById("contenedor").style.visibility="hidden"
-        document.getElementById("btnOcultar").style.visibility="hidden"
+        
         document.getElementById("divImagen").style.visibility="visible"
 	
 		});
@@ -282,9 +283,6 @@ function activarScanner()
 
 	if (document.getElementById("contenedor").style.visibility==="hidden" || document.getElementById("contenedor").style.visibility==="" ) {
 		document.getElementById("contenedor").style.visibility="visible"
-        document.getElementById("btnOcultar").style.visibility="visible"
-        document.getElementById("btnOcultar").style.zIndex=10
-        document.getElementById("btnOcultar").style.opacity="100%"
         document.getElementById("divImagen").style.visibility="hidden"
        
         
@@ -294,7 +292,6 @@ function activarScanner()
 	  } else {
 		
 		document.getElementById("contenedor").style.visibility="hidden"
-        document.getElementById("btnOcultar").style.visibility="hidden"
         document.getElementById("divImagen").style.visibility="visible"
         
         
