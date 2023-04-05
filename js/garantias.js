@@ -91,7 +91,8 @@ async function buscarEan() {
 
             if (parseInt(garantia.EAN) ===parseInt(document.getElementById("inpEan").value))
                 {
-                    Quagga.stop();
+                    
+                    
                     let precio = parseInt(document.getElementById("inpPrecio").value)
                     let cuota= parseInt(document.getElementById("inpCuota").value)
                     GE24= garantia.G24
@@ -275,7 +276,11 @@ function activarScanner()
 
 	if (document.getElementById("contenedor").style.visibility==="hidden" || document.getElementById("contenedor").style.visibility==="" ) {
 		document.getElementById("contenedor").style.visibility="visible"
+        document.getElementById("btnOcultar").style.visibility="visible"
+        document.getElementById("btnOcultar").style.zIndex=0
+        document.getElementById("btnOcultar").style.opacity="100%"
         document.getElementById("imagenEdata").style.visibility="hidden"
+        
         
 		
 		
@@ -283,6 +288,7 @@ function activarScanner()
 		Quagga.stop();
 		scanning = false;
 		document.getElementById("contenedor").style.visibility="hidden"
+        document.getElementById("btnOcultar").style.visibility="hidden"
         document.getElementById("imagenEdata").style.visibility="visible"
 	  }
 }

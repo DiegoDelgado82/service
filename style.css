@@ -892,7 +892,7 @@ left:30px;
   position: absolute;
   top: 150px;
   height: 34px;
-  left: 295px;
+  left: 300px;
 }
 
 #btnEye
@@ -1158,4 +1158,13 @@ canvas{
 	width: 350px;
  	height: 350px;
 
+}
+
+#btnOcultar
+{
+  z-index: -1;
+  opacity: 0%;
+  position: absolute;
+  top:400px;
+  left:280px;
 }
