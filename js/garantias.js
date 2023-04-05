@@ -266,7 +266,12 @@ function activarScanner()
 			// Imprimimos todo el data para que puedas depurar
 			document.getElementById("inpEan").value=data.codeResult.code
 			//buscarCuotas(data.codeResult.code)
+            
+            
             Quagga.stop();
+            document.getElementById("contenedor").style.visibility="hidden"
+        document.getElementById("btnOcultar").style.visibility="hidden"
+        document.getElementById("divImagen").style.visibility="visible"
 	
 		});
 	
