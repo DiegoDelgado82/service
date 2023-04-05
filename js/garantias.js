@@ -24,8 +24,7 @@ async function getGarantia() {
 
 function cargarDiv()
 {
-    document.getElementById("btnScanner").disabled = false;
-    document.getElementById("inpEan").disabled = false;
+    
     document.getElementById("tituloGE").textContent="Garantía Extendida"
     document.getElementById("pCuotas60").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas48").textContent=document.getElementById("inpCuota").value +" Cuotas" 
@@ -265,10 +264,12 @@ function activarScanner()
 		});
 	
 		Quagga.onDetected((data) => {
-			$resultados.textContent = data.codeResult.code;
+			//$resultados.textContent = data.codeResult.code;
 			// Imprimimos todo el data para que puedas depurar
 			document.getElementById("inpEan").value=data.codeResult.code
 			//buscarCuotas(data.codeResult.code)
+            document.getElementById("btnScanner").disabled = false;
+            document.getElementById("inpEan").disabled = false;
             
             
             Quagga.stop();
