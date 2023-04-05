@@ -264,7 +264,7 @@ function activarScanner()
 			$resultados.textContent = data.codeResult.code;
 			// Imprimimos todo el data para que puedas depurar
 			document.getElementById("inpEan").value=data.codeResult.code
-			buscarCuotas(data.codeResult.code)
+			//buscarCuotas(data.codeResult.code)
            
 	
 		});
@@ -280,6 +280,7 @@ function activarScanner()
         document.getElementById("btnOcultar").style.zIndex=10
         document.getElementById("btnOcultar").style.opacity="100%"
         document.getElementById("imagenEdata").style.visibility="hidden"
+       
         
         
 		
