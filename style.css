@@ -839,8 +839,20 @@ left:30px;
   position: absolute;
   top:90px;
   text-align: center;
-  width: 350px;
+  width: 300px;
   font-size: 2rem ;
+}
+
+#btnScanner
+{
+  position: absolute;
+  top: 90px;
+  left: 320px;
+  width: 50px;
+  height: 35px;
+  font-size:24px;
+  
+
 }
 
 #inpDatosCuotas
@@ -1122,4 +1134,28 @@ aad
 {
   border: #61dafb;
   border-style: double;
+}
+
+#contenedor{
+	width: 100%;
+	max-width: 100%;
+  position: relative;
+ 	height: 500px;
+	
+ 
+}
+canvas{
+	max-width: 100%;
+}
+#contenedor video{
+	position: absolute;
+	top:100px;
+	left:0px;
+	border-radius:4%;
+	border-style: solid;
+	border-color: red;
+	max-width: 100%;
+	width: 350px;
+ 	height: 350px;
+
 }
