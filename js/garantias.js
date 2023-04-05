@@ -258,6 +258,7 @@ function activarScanner()
 			}
 			console.log("Iniciado correctamente");
 			Quagga.start();
+           
 		});
 	
 		Quagga.onDetected((data) => {
@@ -265,7 +266,7 @@ function activarScanner()
 			// Imprimimos todo el data para que puedas depurar
 			document.getElementById("inpEan").value=data.codeResult.code
 			//buscarCuotas(data.codeResult.code)
-           
+            Quagga.stop();
 	
 		});
 	
@@ -279,17 +280,20 @@ function activarScanner()
         document.getElementById("btnOcultar").style.visibility="visible"
         document.getElementById("btnOcultar").style.zIndex=10
         document.getElementById("btnOcultar").style.opacity="100%"
-        document.getElementById("imagenEdata").style.visibility="hidden"
+        document.getElementById("divImagen").style.visibility="hidden"
        
         
         
 		
 		
 	  } else {
-		Quagga.stop();
-		scanning = false;
+		
 		document.getElementById("contenedor").style.visibility="hidden"
         document.getElementById("btnOcultar").style.visibility="hidden"
-        document.getElementById("imagenEdata").style.visibility="visible"
+        document.getElementById("divImagen").style.visibility="visible"
+        
+        
+        
+        
 	  }
 }
