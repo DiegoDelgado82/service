@@ -25,6 +25,7 @@ async function getGarantia() {
 function cargarDiv()
 {
     document.getElementById("btnScanner").disabled = false;
+    document.getElementById("inpEan").disabled = false;
     document.getElementById("tituloGE").textContent="Garantía Extendida"
     document.getElementById("pCuotas60").textContent=document.getElementById("inpCuota").value +" Cuotas" 
     document.getElementById("pCuotas48").textContent=document.getElementById("inpCuota").value +" Cuotas" 
@@ -238,6 +239,7 @@ function activarScanner()
 {
 	
         document.getElementById("btnScanner").disabled = true;
+        document.getElementById("inpEan").disabled = true;
 		const $resultados = document.querySelector("#resultado");
 		Quagga.init({
 			inputStream: {
