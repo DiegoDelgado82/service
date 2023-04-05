@@ -277,7 +277,7 @@ function activarScanner()
 	if (document.getElementById("contenedor").style.visibility==="hidden" || document.getElementById("contenedor").style.visibility==="" ) {
 		document.getElementById("contenedor").style.visibility="visible"
         document.getElementById("btnOcultar").style.visibility="visible"
-        document.getElementById("btnOcultar").style.zIndex=0
+        document.getElementById("btnOcultar").style.zIndex=10
         document.getElementById("btnOcultar").style.opacity="100%"
         document.getElementById("imagenEdata").style.visibility="hidden"
         
