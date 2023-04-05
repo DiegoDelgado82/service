@@ -91,6 +91,7 @@ async function buscarEan() {
 
             if (parseInt(garantia.EAN) ===parseInt(document.getElementById("inpEan").value))
                 {
+                    Quagga.stop();
                     let precio = parseInt(document.getElementById("inpPrecio").value)
                     let cuota= parseInt(document.getElementById("inpCuota").value)
                     GE24= garantia.G24
@@ -261,9 +262,9 @@ function activarScanner()
 		Quagga.onDetected((data) => {
 			$resultados.textContent = data.codeResult.code;
 			// Imprimimos todo el data para que puedas depurar
-			
+			document.getElementById("inpEan").value=data.codeResult.code
 			buscarCuotas(data.codeResult.code)
-            Quagga.stop();
+           
 	
 		});
 	
