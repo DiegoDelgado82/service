@@ -90,12 +90,12 @@
     
     $(document).on("touchstart", "button", function() {
       var text = $(this).text();
-      responsiveVoice.speak("Allows you to access contacts by store");
+      responsiveVoice.speak("button" + text);
     });
 
     $(document).on("mouseover", "button", function() {
       var text = $(this).text();
-      responsiveVoice.speak("Allows you to access contacts by store");
+      responsiveVoice.speak("button" + text);
     });
 
   });
