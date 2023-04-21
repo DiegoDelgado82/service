@@ -88,10 +88,16 @@
    <script>
     $(document).ready(function() {
     
+    $(document).on("touchstart", "button", function() {
+      var text = $(this).text();
+      responsiveVoice.speak(text);
+    });
+
     $(document).on("mouseover", "button", function() {
       var text = $(this).text();
       responsiveVoice.speak(text);
     });
+
   });
    </script>
   
