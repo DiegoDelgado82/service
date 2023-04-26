@@ -804,6 +804,16 @@ left:30px;
   font-size: 14px;
 }
 
+.footer2
+{
+  position: absolute;
+  top:620px;
+  width: 400px;
+
+  text-align: center;
+  font-size: 14px;
+}
+
 #divImagen
 {
   position: absolute;
