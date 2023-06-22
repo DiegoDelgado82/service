@@ -121,94 +121,94 @@ function mostrarMapa(provincia) {
   switch (provincia) {
     case "Buenos Aires":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/BuenosAires.png";
+        "../img/provincias/BuenosAires.png";
       break;
     case "CABA":
-      document.getElementById("imagenMapa").src = "./img/provincias/CABA.png";
+      document.getElementById("imagenMapa").src = "../img/provincias/CABA.png";
       break;
     case "Catamarca":
       document.getElementById("imagenMapa").src =
         "./img/provincias/Catamarca.png";
       break;
     case "Chaco":
-      document.getElementById("imagenMapa").src = "./img/provincias/Chaco.png";
+      document.getElementById("imagenMapa").src = "../img/provincias/Chaco.png";
       break;
     case "Chubut":
-      document.getElementById("imagenMapa").src = "./img/provincias/Chubut.png";
+      document.getElementById("imagenMapa").src = "../img/provincias/Chubut.png";
       break;
     case "Córdoba":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Cordoba.png";
+        "../img/provincias/Cordoba.png";
       break;
     case "Corrientes":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Corrientes.png";
+        "../img/provincias/Corrientes.png";
       break;
     case "Entre Ríos":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/EntreRios.png";
+        "../img/provincias/EntreRios.png";
       break;
     case "Formosa":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Formosa.png";
+        "../img/provincias/Formosa.png";
       break;
     case "Jujuy":
-      document.getElementById("imagenMapa").src = "./img/provincias/Jujuy.png";
+      document.getElementById("imagenMapa").src = "../img/provincias/Jujuy.png";
       break;
     case "La Pampa":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/LaPampa.png";
+        "../img/provincias/LaPampa.png";
       break;
     case "La Rioja":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/LaRioja.png";
+        "../img/provincias/LaRioja.png";
       break;
     case "Mendoza":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Mendoza.png";
+        "../img/provincias/Mendoza.png";
       break;
     case "Misiones":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Misiones.png";
+        "../img/provincias/Misiones.png";
       break;
     case "Neuquén":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Neuquen.png";
+        "../img/provincias/Neuquen.png";
       break;
     case "Río Negro":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/RioNegro.png";
+        "../img/provincias/RioNegro.png";
       break;
     case "Salta":
-      document.getElementById("imagenMapa").src = "./img/provincias/Salta.png";
+      document.getElementById("imagenMapa").src = "../img/provincias/Salta.png";
       break;
     case "San Juan":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/SanJuan.png";
+        "../img/provincias/SanJuan.png";
       break;
     case "San Luis":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/SanLuis.png";
+        "../img/provincias/SanLuis.png";
       break;
     case "Santa Cruz":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/SantaCruz.png";
+        "../img/provincias/SantaCruz.png";
       break;
     case "Santa Fe":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/SantaFe.png";
+        "../img/provincias/SantaFe.png";
       break;
     case "Tierra del Fuego":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/TierraFuego.png";
+        "../img/provincias/TierraFuego.png";
       break;
     case "Tucumán":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Tucuman.png";
+        "../img/provincias/Tucuman.png";
       break;
 
     default:
-      document.getElementById("imagenMapa").src = "./img/argentina.png";
+      document.getElementById("imagenMapa").src = "../img/argentina.png";
   }
 }
 
