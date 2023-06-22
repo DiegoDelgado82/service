@@ -1,0 +1,1180 @@
+body
+{
+ 
+  font-family: 'Rubik', sans-serif;
+ 
+}
+ 
+ label
+{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color:black;
+}
+a{
+  font-family: 'Rubik', sans-serif;
+}
+
+button{
+  font-family: 'Rubik', sans-serif;
+}
+
+
+#divImagen
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    size: 10%;
+    width:330px;
+    height:145px;
+    
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container
+{
+  z-index: 10;
+
+  height: 800px;
+
+}
+
+
+.buscar
+
+{
+position: absolute;
+width: 300px;
+left:30px;
+}
+
+.headerLogo
+{
+  position: absolute;
+  left:1rem;
+  top: 3rem;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.logo
+{
+  position: absolute;
+  left:1rem;
+  top: 1.5rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.logoMap
+{
+  position: absolute;
+  left:0rem;
+  top: -2rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+
+
+.Titulo
+{
+  position: absolute;
+  width: 351px;
+  left:30px;
+  top:160px;
+  text-align: center;
+  
+  color: black;
+  font-size:1.5em;
+
+}
+.instrucciones
+{
+  position: absolute;
+  width: 351px;
+  left:30px;
+  top:190px;
+  text-align: left;
+  
+  color: black;
+  font-size:0.8em;
+
+}
+
+
+.BotonBuscar
+{
+  z-index:20;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left:350px;
+  top:200px;
+  text-align: center;
+  align-items: center;
+  font-style: oblique;
+  font-size: 20px;
+
+  border-radius: 80%;
+  background-color: white;
+}
+
+.Buscar
+{
+  top:200px;
+  left: 280px;
+  height: 30px;
+  border-radius: 80%;
+
+}
+
+
+
+
+.ContenedorResultado
+{
+  z-index: 0; 
+  position:absolute;
+  top:285px;
+  left: 20px;
+  height: 320px;
+  width: 370px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: .25;
+
+  
+}
+
+.Web
+{
+  position:absolute;
+  top:295px;
+  left: 30px;
+  width: 351px;
+  text-align: center;
+  
+  font-size: 18px;
+ 
+}
+
+
+
+
+
+.DatoWeb
+{
+  position:absolute;
+  top:320px;
+  left: 30px;
+  height: 50px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#99D9EA;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  text-align: center;
+  overflow-wrap: break-word;
+  vertical-align:middle;
+}
+
+
+.Email
+{
+  position:absolute;
+  top:375px;
+  left: 30px;
+  width: 340px;
+ text-align: center;
+  
+  font-size: 18px;
+ 
+}
+
+
+
+
+
+
+
+
+
+.DatoEmail
+{
+  position:absolute;
+  top:400px;
+  left: 30px;
+  margin:auto;
+  height: 50px;
+  text-align: center;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#99D9EA;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  vertical-align:middle;  
+
+}
+
+.Telefono1
+{
+  position:absolute;
+  top:455px;
+  left: 30px;
+  width: 340px;
+  margin:auto;
+  text-align: center;
+
+  font-size: 18px;
+ 
+}
+
+
+.DatoTelefono1
+{
+  z-index:10 ;
+  position:absolute;
+  top:480px;
+  left: 30px;
+  height: 30px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#99D9EA;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  margin:auto;
+  text-align: center;
+
+}
+
+
+.Telefono2
+{
+  position:absolute;
+  top:520px;
+  left: 30px;
+  width: 351px;
+  text-align: center;
+ 
+  font-size: 18px;
+ 
+}
+
+
+
+.DatoTelefono2
+{
+  position:absolute;
+  top:545px;
+  left: 30px;
+  height: 30px;
+  width: 340px;
+  border-radius: 20px;
+  background-color:#99D9EA;
+  padding-top: 5px;
+  color:black;
+  font-size: 14px;
+  margin:auto;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+.BotonNuevo
+{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: #99D9EA;
+  border-radius: 5px;
+  left:105px;
+  border-width: 0ch;
+  top:630px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  backdrop-filter:blur(20px);
+  padding-top: 5px; 
+  
+
+}
+
+.BotonDisponible
+{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: #282c34;
+  border-radius: 20px;
+  left:230px;
+
+  top:05px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  backdrop-filter:blur(80px);
+  padding-top: 5px; 
+  
+
+}
+
+
+
+
+
+.menuNivelMemoria{
+  width: 179px!important;
+}
+
+
+
+
+.DropdownMarca{
+  position: absolute;
+  top: 50px;
+  margin-left: 00px;
+  width: 175px!important;
+}
+
+
+
+
+.DropdownMarca , .dropdown-toggle {background-image: linear-gradient(to right, black 0%, #354f5e  51%, #354f5e 100%)}
+  .DropdownMarca{
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 20px;
+    display:block ;
+    font-size: 1rem;
+    padding: 5px 150px;
+       
+    border:none;
+    margin-left:20px;
+    
+    
+    
+  }
+
+
+
+
+
+  .DropdownMarca:hover , .dropdown-toggle:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+
+  .DropdownMarca:focus , .dropdown-toggle:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+
+
+
+    
+    
+    
+    
+    
+    .DropdownProducto , .dropdown-toggle {background-image: linear-gradient(to right, black 0%, #354f5e  51%, #354f5e 100%)}
+      .DropdownProducto{
+        position:absolute;
+        color: white;
+        text-align: left;
+        transition: 0.5s;
+        background-size: 200% auto;
+        border-radius: 20px;
+        display:block ;
+        font-size: 1rem;
+        padding: 5px 75px;
+    
+        border:none;
+  
+        
+        
+        
+      }
+    
+    
+    
+    
+    
+      .DropdownProducto:hover , .dropdown-toggle:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: 0.5s;
+      }
+    
+      .DropdownProducto:focus , .dropdown-toggle:hover {
+          /*background-position: right center; /* change the direction of the change here */
+          color: white;
+          text-decoration: none;
+          border-radius: 20px;
+          transition: 0.5s;
+        }
+
+.ComboMarca
+{
+  position: absolute;
+  top:200px;
+  left:20px;
+}
+
+.ComboProducto
+{
+  position: absolute;
+  top:200px;
+  left:180px;
+}
+
+
+.TituloMarca
+{
+  position: absolute;
+  width: 720px;
+  left:10px;
+  top:240px;
+  text-align: center;
+  font-size: 16px;
+  height: 20px;
+  width: 370px;
+  border-radius: 20px;
+  
+  padding-top: -5px;
+  
+  
+
+}
+
+.TituloProducto
+{
+  position: absolute;
+  width:auto;
+  left:10px;
+  top:260px;
+  text-align: center;
+  font-size: 16px;
+  height: 20px;
+  width: 370px;
+  border-radius: 20px;
+  
+  padding-top: -5px;
+  
+
+}
+
+.Leyenda
+{
+  position: absolute;
+  left:30px;
+  top: 680px;
+  width: 351px;
+  text-align: center;
+  color:black;
+  
+  font-size: 16px;
+}
+
+.PiePagina
+{
+  position: absolute;
+  top: 780px;
+  left:30px;
+  width: 341px;
+  text-align: center;
+  color:#2196F3;
+  font-size: 14px;
+}
+.Marca
+{
+  position:absolute;
+  top:230px;
+  left:40px;
+  height:30px;
+  max-width: 130px;
+  min-width: 130px;
+  font-size: 14px;
+  border-radius:5px;
+  background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
+  color:black;
+  border-color:black;
+  
+  
+  
+}
+
+.Categoria
+{
+  position:absolute;
+  z-index:20;
+  top:230px;
+  left:220px;
+  height:30px;
+  max-width: 150px;
+  min-width: 150px;
+  border-radius:5px;
+  background-image:linear-gradient(to right, white 0%, white 51%, white 100%);
+  color:black;
+  border-color:black;
+  font-size: 14px;
+    
+  
+}
+
+.imagen
+{
+  position:absolute;
+  top:0px;
+  left:-380px;
+}
+
+.listStore
+{
+  font-size: 0.75 rem;
+  color: blue;
+  text-decoration-line: underline;
+  
+}
+
+.recuadro
+{
+  z-index: -1; 
+  position:absolute;
+  top:3%;
+  left: 0%;
+  height: 640px;
+  width: 415px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: 0.25;
+
+}
+.recuadroStore
+{
+  z-index: -1; 
+  position:absolute;
+  top:4,05%;
+  left: 0%;
+  height: 600px;
+  width: 415px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: 0.25;
+
+}
+.botonHome
+{
+  z-index:20;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left:35rem;
+  top:-17px;
+  text-align: center;
+  
+
+  border-radius: 80%;
+  background-color: white;
+}
+
+
+.botonHomeSto
+{
+  z-index:2;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left:360px;
+  top:25px;
+  text-align: center;
+  cursor: hand;
+
+  border-radius: 80%;
+  background-color: white;
+}
+
+
+
+.bordeBotones
+{
+  z-index: 0; 
+  position:absolute;
+  top:180px;
+  left: 20px;
+  height: 400px;
+  width: 370px;
+  background:transparent;
+  border:2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(90, 91, 187); 
+  background-color:white;
+  opacity: .25;
+
+  
+}
+
+
+.botonDash
+{
+  
+  width: 30%;
+  height: 60px;
+  background-color: #99D9EA;
+  border-radius: 5px;
+  border-width: 0ch;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  backdrop-filter:blur(20px);
+  padding-top: 5px; 
+  cursor: hand;
+  
+
+}
+
+
+.logoDash
+{
+  position: absolute;
+  left:8.5rem;
+  top: 3.2rem;
+  height: 120px;
+  border-radius: 10px;
+}
+
+
+.h3Jefe
+{
+  top:50px;
+  width: 300px; 
+}
+
+.cmbProvincia
+{
+  position: absolute;
+  top:100px;
+}
+
+.cmbBsAs
+{
+  position: absolute;
+  top:100px;
+  left:170px;
+}
+
+.cmbGba
+{
+  position: absolute;
+  top:100px;
+  left:280px;
+}
+
+
+#provincia
+{
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+
+
+
+.fotoSede
+{
+  z-index: -1; 
+  position:absolute;
+  top:100px;
+  left: 2%;
+  height: 80px;
+  width: 80px;
+  background:transparent;
+ 
+  border-style: solid;
+  border-radius: 80px;
+ 
+  background-color:white;
+  
+
+}
+
+.fotoSede2
+{
+  z-index: -1; 
+  position:absolute;
+  top:100px;
+  left: 2%;
+  height: 60px;
+  width: 60px;
+  background:transparent;
+ 
+  border-style: solid;
+  border-radius: 80px;
+ 
+  background-color:white;
+  
+
+}
+
+
+.footer
+{
+  position: absolute;
+  top:600px;
+  width: 300px;
+  left: 90px;
+  font-size: 14px;
+}
+
+.footer2
+{
+  position: absolute;
+  top:620px;
+  width: 400px;
+
+  text-align: center;
+  font-size: 14px;
+}
+
+#divImagen
+{
+  position: absolute;
+  top:300px;
+  left: 35px;
+}
+
+#imagenEdata
+{
+  
+  opacity: 50%;
+}
+
+#btnReConsultar
+{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  top:600px;
+  left:220px;
+  border-radius: 5px;
+}
+
+#pLabelEan
+{
+  position: absolute;
+  top:70px
+}
+
+
+#inpEan
+{
+  position: absolute;
+  top:90px;
+  text-align: center;
+  width: 300px;
+  font-size: 2rem ;
+}
+
+#btnScanner
+{
+  position: absolute;
+  top: 90px;
+  left: 320px;
+  width: 50px;
+  height: 35px;
+  font-size:24px;
+  
+
+}
+
+#inpDatosCuotas
+{
+  position: absolute;
+  top:130px;
+  left: 220px;
+}
+
+#inpDatosPrecio
+{
+  
+  position: absolute;
+  top:130px;
+}
+
+#inpCuota
+{
+  position: absolute;
+  top: 150px;
+  left: 220px;
+  width: 70px;
+  height: 34px;
+  font-size: 2rem ;
+}
+
+#inpPrecio
+{
+  position: absolute;
+  top: 150px;
+  width: 195px;
+  font-size: 2rem ;
+}
+
+#btnCalcular
+{
+  position: absolute;
+  top: 150px;
+  height: 34px;
+  left: 300px;
+}
+
+#btnEye
+{
+  position: absolute;
+  top:550px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye60
+{
+  position: absolute;
+  top:250px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye48
+{
+  position: absolute;
+  top:320px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye36
+{
+  position: absolute;
+  top:390px;
+  left: 340px;
+  font-size:12px
+}
+
+#btnEye24
+{
+  position: absolute;
+  top:460px;
+  left: 340px;
+  font-size:12px
+}
+
+
+
+.pCuotas
+{
+  font-size: 2rem;
+
+}
+
+#pCuotas60
+{
+ position: absolute;
+ top:270px;
+ left: 15px;
+
+}
+
+#pCuotas48
+{
+ position: absolute;
+ top:340px;
+ left: 15px;
+
+}
+
+#pCuotas36
+{
+ position: absolute;
+ top:410px;
+ left: 15px;
+
+}
+
+#pCuotas24
+{
+ position: absolute;
+ top:480px;
+ left: 15px;
+
+}
+
+#pCuotas0
+{
+ position: absolute;
+ top:550px;
+ left: 15px;
+
+}
+
+
+
+#pValorCuotas60
+{
+ position: absolute;
+ top:250px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+#pValorCuotas48
+{
+ position: absolute;
+ top:320px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+#pValorCuotas36
+{
+ 
+ position: absolute;
+ top:390px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+
+#pValorCuotas24
+{
+ position: absolute;
+ top:460px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+#pValorCuotas0
+{
+ position: absolute;
+ z-index: 10;
+ top:530px;
+ left: 120px;
+ font-size: 4rem;
+ text-align: center;
+ width: 150px;
+ background-color: rgb(103, 191, 241);
+ border-radius: 15px;
+
+}
+
+
+
+#pCantidadMeses60
+{
+ position: absolute;
+ top:270px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses48
+{
+ position: absolute;
+ top:340px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses36
+{
+ position: absolute;
+ top:410px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+#pCantidadMeses24
+{
+ position: absolute;
+ top:480px;
+ left: 280px;
+ font-size: 2rem;
+}
+
+
+#pComentarios
+{
+ position: absolute;
+ top:530px;
+ left: 15px;
+ font-size: 1.5rem;
+ 
+
+}
+#pDescripcion
+{
+border-color: #61dafb;
+border-width: 1px;
+background-color: #61dafb;
+border-radius: 5px;
+ width: 350px;
+ height: 50px;
+ position: absolute;
+ text-align: center;
+ 
+ align-items: center;
+ top:190px;
+ left: 15px;
+ font-size: 1.7rem;
+ 
+}
+aad
+#chkG60
+{
+  position: absolute;
+  top: 250px;
+  left:350px;
+  height: 20px;
+  width: 20px;
+
+}
+
+#tituloGE
+{
+  width: 355px;
+}
+
+#camera
+{
+  border: #61dafb;
+  border-style: double;
+}
+
+#contenedor{
+	width: 100%;
+	max-width: 100%;
+  position: relative;
+ 	height: 500px;
+	
+ 
+}
+canvas{
+	max-width: 100%;
+}
+#contenedor video{
+	position: absolute;
+	top:100px;
+	left:0px;
+	border-radius:4%;
+	border-style: solid;
+	border-color: red;
+	max-width: 100%;
+	width: 350px;
+ 	height: 350px;
+
+}
+
+#btnOcultar
+{
+  z-index: -1;
+  opacity: 0%;
+  position: absolute;
+  top:400px;
+  left:280px;
+}
