@@ -3,7 +3,7 @@ body {
 }
 
 .botonDash {
-  width: 30%;
+  width: 40%;
   height: 70px;
   background-color: #99d9ea;
   border-radius: 5px;
@@ -39,19 +39,6 @@ body {
 
 .logoMap {
   width: 1.5rem;
-}
-
-.cmbBsAs {
-  position: absolute;
-  top: 100px;
-  left: 170px;
-}
-
-.cmbGba {
-  position: absolute;
-  top: 100px;
-  left: 280px;
-  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

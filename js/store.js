@@ -54,11 +54,11 @@ async function renderStore(sto) {
           stores[xIndex] = tiendas.Nombre;
           leyenda =
             leyenda +
-            '<li style="cursor: grab" onclick=datosTienda(' +
+            '<p style="cursor: grab" onclick=datosTienda(' +
             tiendas.Nro +
             ') class="listStore">' +
             stores[xIndex] +
-            "</li> ";
+            "</p> ";
           xIndex++;
         }
       });
