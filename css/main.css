@@ -1,6 +1,5 @@
 body {
-  font-family: "Kanit", sans-serif;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .botonDash {
@@ -32,6 +31,27 @@ body {
   background: -webkit-linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   background: linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4f3f6",endColorstr="#8ddcf1",GradientType=1);
+}
+
+.tituloMap {
+  font-size: 1rem;
+}
+
+.logoMap {
+  width: 1.5rem;
+}
+
+.cmbBsAs {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+
+.cmbGba {
+  position: absolute;
+  top: 100px;
+  left: 280px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

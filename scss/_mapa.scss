@@ -7,7 +7,25 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4f3f6",endColorstr="#8ddcf1",GradientType=1);
 }
 
-#imagenMapa
-{
+.tituloMap {
+    font-size: 1rem;
+    
+  }
+  .logoMap {
+    width: 1.5rem;
 
+  }
+  
+  .cmbBsAs
+{
+  position: absolute;
+  top:100px;
+  left:170px;
+}
+
+.cmbGba
+{
+  position: absolute;
+  top:100px;
+  left:280px;
 }
