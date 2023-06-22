@@ -696,13 +696,13 @@ left:30px;
 {
   
   width: 30%;
-  height: 60px;
+  height: 70px;
   background-color: #99D9EA;
   border-radius: 5px;
   border-width: 0ch;
   text-align: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.5vh;
   color: black;
   backdrop-filter:blur(20px);
   padding-top: 5px; 
@@ -714,11 +714,7 @@ left:30px;
 
 .logoDash
 {
-  position: absolute;
-  left:8.5rem;
-  top: 3.2rem;
-  height: 120px;
-  border-radius: 10px;
+  width: 15vh;
 }
 
 
