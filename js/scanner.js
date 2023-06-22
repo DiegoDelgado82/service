@@ -66,7 +66,7 @@ async function buscarCuotas(eanEscaneado) {
 
   cuotas.forEach((cuota) => {
     if (parseInt(cuota.EAN) === parseInt(eanEscaneado)) {
-      document.getElementById("cuotas").textContent = cuota.CUOTAS + " Cuotas";
+      document.getElementById("cuotas").textContent = cuota.CUOTAS;
       document.getElementById("descripcion").textContent = cuota.DESCRIPCION;
     }
   });
