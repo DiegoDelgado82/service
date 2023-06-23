@@ -25,15 +25,19 @@ body {
   width: 5rem;
 }
 
+#bordeDash {
+  border-color: black !important;
+}
+
 body {
-  background-image: url("../img/fondo.jpg");
+  background: linear-gradient(90deg, rgb(60, 129, 143) 0%, rgb(90, 147, 151) 49%, rgb(22, 157, 194) 100%);
 }
 
 .bg-banner {
   background: rgb(228, 243, 246);
-  background: -moz-linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
-  background: linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
+  background: -moz-linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
+  background: linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4f3f6",endColorstr="#8ddcf1",GradientType=1);
 }
 
