@@ -25,6 +25,10 @@ body {
   width: 5rem;
 }
 
+body {
+  background-image: url("../img/fondo.jpg");
+}
+
 .bg-banner {
   background: rgb(228, 243, 246);
   background: -moz-linear-gradient(90deg, rgb(228, 243, 246) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
@@ -38,7 +42,7 @@ body {
 }
 
 .logoMap {
-  width: 1.5rem;
+  width: 2.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
