@@ -85,6 +85,48 @@ async function Add() {
   });
 }
 
+async function cargarArray() {
+  let users = await getMarcs();
+  let marcas = [];
+  users.forEach((user) => {
+    marcas= user.MARCA;
+   });
+
+   
+   const searchValue = document.getElementById("searchInput").value.toLowerCase();
+
+
+   document.getElementById("results").value = "";
+   users.forEach(user => {
+    
+    const lowerCaseItem = user.MARCA.toLowerCase();
+    if (lowerCaseItem.includes(searchValue)) {
+
+      document.getElementById("results").value += user.MARCA + "\n";
+     
+    }
+  });
+
+
+ /*
+   users.forEach(user => {
+      const lowerCaseItem = user.toLowerCase();
+ 
+    
+     
+   });
+
+  */
+
+}
+
+const buscarService = () => {
+  
+  
+};
+
+
+
 Add();
 
 function removeOptions(ddl) {

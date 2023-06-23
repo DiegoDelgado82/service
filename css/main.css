@@ -49,4 +49,8 @@ body {
   width: 2.2rem;
 }
 
+#bg-titulo {
+  background-image: url("../mg/logos/service.jpeg");
+}
+
 /*# sourceMappingURL=main.css.map */
