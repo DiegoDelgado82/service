@@ -49,6 +49,10 @@ body {
   width: 2.2rem;
 }
 
+#datosTiendaMapa li {
+  list-style-type: none;
+}
+
 #bg-titulo {
   background-image: url("../mg/logos/service.jpeg");
 }
