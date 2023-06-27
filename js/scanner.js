@@ -66,8 +66,34 @@ async function buscarCuotas(eanEscaneado) {
 
   cuotas.forEach((cuota) => {
     if (parseInt(cuota.EAN) === parseInt(eanEscaneado)) {
-      document.getElementById("cuotas").textContent = cuota.CUOTAS;
+      document.getElementById("ean").textContent = cuota.EAN;
       document.getElementById("descripcion").textContent = cuota.DESCRIPCION;
+      document.getElementById("cuotas").textContent = cuota.CUOTAS;
+    }
+  });
+}
+
+async function buscarCuota() {
+
+  let cuotas = await getCuota();
+  let ean= document.getElementById("eanProducto").value
+  let EanATexto = ean.toString();
+  const EanTexto = parseInt(EanATexto.slice(-5));
+
+  cuotas.forEach((cuota) => {
+    let EanTextoJson=cuota.EAN.toString()
+    let EanJson=parseInt(EanTextoJson.slice(-5));
+      
+    if (parseInt(EanTexto) === parseInt(EanJson)) {
+      document.getElementById("ean").textContent = cuota.EAN;
+      document.getElementById("descripcion").textContent = cuota.DESCRIPCION;
+      document.getElementById("cuotas").textContent = cuota.CUOTAS;
+    }
+    else
+    {
+      document.getElementById("ean").textContent = "Ean";
+      document.getElementById("descripcion").textContent = "Descripción del Producto";
+      document.getElementById("cuotas").textContent = "Cuotas";
     }
   });
 }

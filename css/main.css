@@ -29,10 +29,6 @@ body {
   border-color: black !important;
 }
 
-body {
-  background: linear-gradient(90deg, rgb(60, 129, 143) 0%, rgb(90, 147, 151) 49%, rgb(22, 157, 194) 100%);
-}
-
 .bg-banner {
   background: rgb(228, 243, 246);
   background: -moz-linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
@@ -55,6 +51,26 @@ body {
 
 #bg-titulo {
   background-image: url("../mg/logos/service.jpeg");
+}
+
+#resultados {
+  height: 100px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  cursor: hand;
+}
+
+#rojo {
+  color: red;
+}
+
+#inputBusqueda {
+  width: 100%;
+}
+
+.cuotas {
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
