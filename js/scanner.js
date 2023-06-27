@@ -79,21 +79,26 @@ async function buscarCuota() {
   let ean= document.getElementById("eanProducto").value
   let EanATexto = ean.toString();
   const EanTexto = parseInt(EanATexto.slice(-5));
-
+  let ban=0;
   cuotas.forEach((cuota) => {
     let EanTextoJson=cuota.EAN.toString()
     let EanJson=parseInt(EanTextoJson.slice(-5));
       
     if (parseInt(EanTexto) === parseInt(EanJson)) {
+      ban=1;
       document.getElementById("ean").textContent = cuota.EAN;
       document.getElementById("descripcion").textContent = cuota.DESCRIPCION;
       document.getElementById("cuotas").textContent = cuota.CUOTAS;
+      
     }
     else
     {
-      document.getElementById("ean").textContent = "Ean";
+      if (ban===0)
+      {
+        document.getElementById("ean").textContent = "Ean";
       document.getElementById("descripcion").textContent = "Descripción del Producto";
       document.getElementById("cuotas").textContent = "Cuotas";
+      }
     }
   });
 }
