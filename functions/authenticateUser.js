@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
 
     // Define las credenciales de usuario y contraseña
     const credentials = [
-      { username: 'usuario1', password: 'contrasena1' },
+      { username: 'diego', password: '123456' },
       { username: 'usuario2', password: 'contrasena2' },
       // Agrega más usuarios y contraseñas si es necesario
     ];
