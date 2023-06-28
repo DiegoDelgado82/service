@@ -1,17 +1,17 @@
+const basicAuth = require('basic-auth');
+const compare = require('tsscmp');
+
 exports.handler = async (event, context) => {
-    const auth = require('basic-auth');
-    const compare = require('tsscmp');
-    
+  try {
+    const user = basicAuth.parse(event.headers.authorization);
+
     // Define las credenciales de usuario y contraseña
     const credentials = [
-      { username: 'diego', password: '123456' },
+      { username: 'usuario1', password: 'contrasena1' },
       { username: 'usuario2', password: 'contrasena2' },
       // Agrega más usuarios y contraseñas si es necesario
     ];
-    
-    // Obtiene las credenciales proporcionadas por el usuario
-    const user = auth(event);
-    
+
     // Verifica si las credenciales son válidas
     const isValidCredentials = (user) => {
       for (const credential of credentials) {
@@ -21,7 +21,7 @@ exports.handler = async (event, context) => {
       }
       return false;
     };
-    
+
     // Si las credenciales son válidas, permite el acceso
     if (isValidCredentials(user)) {
       return {
@@ -29,7 +29,7 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ message: 'Autenticación exitosa' }),
       };
     }
-    
+
     // Si las credenciales no son válidas, devuelve un error
     return {
       statusCode: 401,
@@ -38,5 +38,10 @@ exports.handler = async (event, context) => {
         'WWW-Authenticate': 'Basic realm="Acceso restringido"',
       },
     };
-  };
-  
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Error al procesar la solicitud' }),
+    };
+  }
+};
