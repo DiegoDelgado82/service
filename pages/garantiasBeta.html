@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <script src="../js/scanner.js"></script>
+    <script src="../js/garantiasBeta.js"></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -69,31 +71,36 @@
             class="col-12"
             onkeyup="buscarCuota()"
             type="number"
-            id="eanProducto"
+            id="eanProducto" autofocus
           />
-
-          <h3 class="h3 text-center mt-3 bg-info rounded-2">
-            SECADOR DE PELO NALK & REY MOD. EASYDRY 2000 MOD. 251541
+          <h2 id= "ean" class="h3 text-center mt-3 rounded-2 border border-1">&nbsp;
+           
+          </h2>
+          <h3 id="descripcion" class="h3 text-center mt-1  bg-info rounded-2">&nbsp;
+            
           </h3>
+          <h2 id= "cuotas" class="h3 text-center mt-1 mb-5 rounded-2 border border-1">&nbsp;
+            
+           </h2>
 
-          <label class="col-6" for="monto">Precio total financiado</label
+          <label  class="col-6" for="monto">Precio total financiado</label
           ><label class="col-2 mx-0 text-start" for="cuota">Cuota</label>
-          <input
+          <input id="inpPrecio"
             class="col-6"
             onkeyup="buscarCuota()"
             type="number"
-            id="monto"
+            
           />
 
-          <select class="col-2 mx-0" name="cuotas" id="cuota">
+          <select class="col-2 mx-0" name="cuotas" id="inpCuota">
             <option value="1">1</option>
             <option value="3">3</option>
             <option value="6">6</option>
             <option value="9">9</option>
             <option value="12">12</option>
-            <option value="18">18</option>
+            
           </select>
-          <button class="col-3 mx-2 px-1">Calcular</button>
+          <button class="col-3 mx-2 px-1" onclick="buscarEan()">Calcular</button>
         </div>
         <div class="col-0 col-sm-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4"></div>
       </div>
@@ -111,12 +118,12 @@
         <div
           class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-center"
         >
-          <label class="cuotaGE col-2">1 cuota</label>
+          <label id="pCuotas60" class="cuotaGE col-2"></label>
 
-          <label id="valorCuota60" class="h1 col-6 bg-info rounded-3"
-            >$1858112</label
+          <button id="pValorCuotas60" onclick="ocultarOpcionGe(60)"  class="h1 col-6 bg-info rounded-3"
+            >&nbsp;</button
           >
-          <label class="col-3">60 meses</label>
+          <label id="pCantidadMeses60" class="col-3">60 meses</label>
         </div>
         <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
         <div
@@ -126,7 +133,7 @@
 
 
 <!--FILA 48 MESES-->
-<div class="row mt-5">
+<div class="row mt-2">
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
     class="col-0 col-sm-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4 mx-0"
@@ -135,12 +142,12 @@
   <div
     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-center"
   >
-    <label class="cuotaGE col-2">1 cuota</label>
+    <label id="pCuotas48" class="cuotaGE col-2"></label>
 
-    <label id="valorCuota48" class="h1 col-6 bg-info rounded-3"
-      >$1858112</label
-    >
-    <label class="col-3">48 meses</label>
+    <button id="pValorCuotas48" onclick="ocultarOpcionGe(48)"  class="h1 col-6 bg-info rounded-3"
+            >&nbsp;</button
+          >
+    <label id="pCantidadMeses48" class="col-3">48 meses</label>
   </div>
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
@@ -150,7 +157,7 @@
 
 
 <!--FILA 36 MESES-->
-<div class="row mt-5">
+<div class="row mt-2">
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
     class="col-0 col-sm-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4 mx-0"
@@ -159,12 +166,12 @@
   <div
     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-center"
   >
-    <label class="cuotaGE col-2">1 cuota</label>
+    <label id="pCuotas36"  class="cuotaGE col-2"></label>
 
-    <label id="valorCuota36" class="h1 col-6 bg-info rounded-3"
-      >$1858112</label
-    >
-    <label class="col-3">36 meses</label>
+    <button id="pValorCuotas36" onclick="ocultarOpcionGe(36)"  class="h1 col-6 bg-info rounded-3"
+    >&nbsp;</button
+  >
+    <label id="pCantidadMeses36"  class="col-3">36 meses</label>
   </div>
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
@@ -174,7 +181,7 @@
 
 
 <!--FILA 24 MESES-->
-<div class="row mt-5">
+<div class="row mt-2">
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
     class="col-0 col-sm-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4 mx-0"
@@ -183,12 +190,12 @@
   <div
     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-center"
   >
-    <label class="cuotaGE col-2">1 cuota</label>
+    <label id="pCuotas24"  class="cuotaGE col-2"></label>
 
-    <label id="valorCuota24" class="h1 col-6 bg-info rounded-3"
-      >$1858112</label
-    >
-    <label class="col-3">24 meses</label>
+    <button id="pValorCuotas24" onclick="ocultarOpcionGe(24)"  class="h1 col-6 bg-info rounded-3"
+    >&nbsp;</button
+  >
+    <label id="pCantidadMeses24"  class="col-3">24 meses</label>
   </div>
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
@@ -197,7 +204,7 @@
 </div>
 
 <!--FILA DE FABRICA-->
-<div class="row mt-5">
+<div class="row mt-2">
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
     class="col-0 col-sm-0 col-md-3 col-lg-4 col-xl-4 col-xxl-4 mx-0"
@@ -206,12 +213,12 @@
   <div
     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-center"
   >
-    <label class="cuotaGE col-2">1 cuota</label>
+    <label id="pCuotas0"  class="cuotaGE col-2"></label>
 
-    <label id="valorCuota" class="h1 col-6 bg-info rounded-3"
-      >$1858112</label
-    >
-    <label class="col-3">de Fabrica</label>
+    <button id="pValorCuotas0" onclick="ocultarOpcionGe(0)"  class="h1 col-6 bg-info rounded-3"
+    >&nbsp;</button
+  >
+    <label id="pCantidadMeses0"  class="col-3">de Fabrica</label>
   </div>
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
   <div
@@ -232,8 +239,8 @@
   <div
     class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mx-0 text-end"
   >
-  <button id= "btnEye" onclick="mostarMontoGE()"><i class="fa fa-eye"></i></button> 
-  <button class="col-5 rounded-2 ">Buscar de Nuevo</button>
+  <button id= "btnEye" onclick="mostarMontoGE()"><i class="fa fa-eye"></i></button>
+  <button id="btnReConsultar" onclick="cargarDiv()">Buscar de Nuevo</button>
  
   </div>
   <!--Columnas 0 en tamaño chico, 4 en tamaño grande -->
