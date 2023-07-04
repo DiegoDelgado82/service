@@ -31,6 +31,23 @@ function cargarDiv() {
 
 }
 
+function borrar() {
+  
+  document.getElementById("pCuotas60").textContent =""; 
+  document.getElementById("pCuotas48").textContent ="";
+  document.getElementById("pCuotas36").textContent ="";
+  document.getElementById("pCuotas24").textContent ="";
+  document.getElementById("pCuotas0").textContent ="";
+  document.getElementById("pValorCuotas60").textContent ="-"; 
+  document.getElementById("pValorCuotas48").textContent ="-";
+  document.getElementById("pValorCuotas36").textContent ="-";
+  document.getElementById("pValorCuotas24").textContent ="-";
+  document.getElementById("pValorCuotas0").textContent ="-";
+  document.getElementById("eanProducto").autofocus=true;
+
+
+}
+
 async function buscarEan() {
  
   let garantias = await getGarantia();
@@ -111,7 +128,7 @@ async function buscarEan() {
       alert("No se encontró el EAN");
     } else {
       cargarDiv();
-      document.getElementById("tituloGE").textContent = "La mejor Inversión";
+     
     }
   } else {
     alert("Faltan cargar datos");
@@ -166,59 +183,4 @@ async function ocultarOpcionGe(ge) {
   }
 }
 
-function activarScanner() {
-  document.getElementById("btnScanner").disabled = true;
-  document.getElementById("ean").disabled = true;
-  const $resultados = document.querySelector("#resultado");
-  Quagga.init(
-    {
-      inputStream: {
-        constraints: {
-          width: 1920,
-          height: 1080,
-        },
-        name: "Live",
-        type: "LiveStream",
-        target: document.querySelector("#contenedor"), // Pasar el elemento del DOM
-      },
-      decoder: {
-        readers: ["ean_reader"],
-      },
-    },
-    function (err) {
-      if (err) {
-        console.log(err);
-        return;
-      }
-      console.log("Iniciado correctamente");
-      Quagga.start();
-    }
-  );
 
-  Quagga.onDetected((data) => {
-    //$resultados.textContent = data.codeResult.code;
-    // Imprimimos todo el data para que puedas depurar
-    document.getElementById("inpEan").value = data.codeResult.code;
-    //buscarCuotas(data.codeResult.code)
-
-    document.getElementById("inpEan").disabled = false;
-
-    Quagga.stop();
-    document.getElementById("contenedor").style.visibility = "hidden";
-
-    document.getElementById("divImagen").style.visibility = "visible";
-  });
-
-  Quagga.onProcessed(function (result) {});
-
-  if (
-    document.getElementById("contenedor").style.visibility === "hidden" ||
-    document.getElementById("contenedor").style.visibility === ""
-  ) {
-    document.getElementById("contenedor").style.visibility = "visible";
-    document.getElementById("divImagen").style.visibility = "hidden";
-  } else {
-    document.getElementById("contenedor").style.visibility = "hidden";
-    document.getElementById("divImagen").style.visibility = "visible";
-  }
-}
