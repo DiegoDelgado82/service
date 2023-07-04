@@ -125,7 +125,8 @@ async function buscarEan() {
       }
     });
     if (bandera === 0) {
-      alert("No se encontró el EAN");
+      //tambien hay que revisar que haya cargado algun ean
+      alert("El producto no tiene garantía");
     } else {
       cargarDiv();
      
