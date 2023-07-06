@@ -128,7 +128,7 @@ function mostrarMapa(provincia) {
       break;
     case "Catamarca":
       document.getElementById("imagenMapa").src =
-        "./img/provincias/Catamarca.png";
+        "../img/provincias/Catamarca.png";
       break;
     case "Chaco":
       document.getElementById("imagenMapa").src = "../img/provincias/Chaco.png";
