@@ -111,11 +111,12 @@ async function datosTienda(nro) {
         tiendas.Direccion +
         "</li><li>Provincia: " +
         tiendas.Provincia +
-        "</li><li>Telefono: " +
-        tiendas.Telefono +
+        "</li><li><a href='https://wa.me/"+tiendas.Telefono+"'  target='_blank'>"+tiendas.Telefono+"</a>"+
         "</li><li>Líder de Tienda: " +
         tiendas.Lider +
-        " </li> </ul>";
+        " </li>  </ul>";
+
+        
     }
   });
 }

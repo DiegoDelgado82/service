@@ -18,7 +18,7 @@ async function datosTienda(nro) {
   var provinces = [];
 
   tiendas.forEach((tiendas) => {
-    if (tiendas.Nro === nro) {
+    if (tiendas.Nro === 1) {
       stores[xIndex] = tiendas.Nombre;
       alert(
         "Nro tienda: " +
@@ -35,6 +35,7 @@ async function datosTienda(nro) {
   });
   document.getElementById("datostienda").innerHTML =
     leyenda + "</ul><br><br><br><br><h4>Datos de la tienda</h4>";
+   
 }
 
 async function datosTiendaMapa(nro) {
@@ -49,7 +50,7 @@ async function datosTiendaMapa(nro) {
       stores[xIndex] = tiendas.Nombre;
       xIndex++;
       document.getElementById("datosTiendaMapa").innerHTML =
-        "<h4>Datos de la tienda " +
+        "<h4>Datos de la tiendas " +
         tiendas.Nro +
         "-" +
         tiendas.Nombre +
@@ -57,6 +58,9 @@ async function datosTiendaMapa(nro) {
         tiendas.Direccion +
         "</li><li>Provincia: " +
         tiendas.Provincia +
+        +
+        "<a href='https://wa.me/541137009289'  target='_blank'> 1137009289</a>" +
+        +
         "</li><li>Telefono: " +
         tiendas.Telefono +
         "</li><li>Líder de Tienda: " +

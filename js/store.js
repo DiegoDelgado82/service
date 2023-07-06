@@ -11,6 +11,7 @@ async function getStore() {
 }
 
 async function renderStore(sto) {
+ 
   mostrarMapa(sto);
   document.getElementById("datosTiendaMapa").innerHTML = "";
   let tiendas = await getStore();
@@ -32,6 +33,7 @@ async function renderStore(sto) {
           tiendas.Provincia === "Buenos Aires" &&
           tiendas.Zona === document.getElementById("cmbGba").value
         ) {
+         
           stores[xIndex] = tiendas.Nombre;
           leyenda =
             leyenda +
@@ -40,6 +42,7 @@ async function renderStore(sto) {
             ') class="listStore">' +
             stores[xIndex] +
             "</li> ";
+            
           xIndex++;
         }
       });
@@ -89,16 +92,19 @@ async function renderStore(sto) {
 //renderStore();
 
 async function datosTienda(nro) {
+ 
   let tiendas = await getStore();
   let leyenda = "<h3>" + nro + "</h3><br>";
   var xIndex = 0;
   var stores = [];
   var provinces = [];
-
+ 
   tiendas.forEach((tiendas) => {
     if (Number(tiendas.Nro) === nro) {
+      
       stores[xIndex] = tiendas.Nombre;
       xIndex++;
+      
       document.getElementById("datosTienda").innerHTML =
         "<h4>Datos de la tienda " +
         tiendas.Nro +
@@ -110,9 +116,9 @@ async function datosTienda(nro) {
         tiendas.Provincia +
         "</li><li>Telefono: " +
         tiendas.Telefono +
-        "</li><li>Líder de Tienda: " +
+        "</li><li>Líder de Tiendas: " +
         tiendas.Lider +
-        " </li> </ul>";
+        " </li></ul>";
     }
   });
 }
