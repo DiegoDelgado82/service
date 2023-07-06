@@ -66,6 +66,14 @@ async function findLocals() {
       document.getElementById("Jefe").innerHTML =
         "<h3 class='h3Jefe'>" +
         local.Jefe +
+        "</h3> <li><i class='fa fa-envelope'></i> " +
+        local.Mail +
+        "<ul>";
+
+/*
+ document.getElementById("Jefe").innerHTML =
+        "<h3 class='h3Jefe'>" +
+        local.Jefe +
         "</h3> <li><i class='fab fa-whatsapp'></i> " +
         "<a href='https://wa.me/54" +
         local.Celular +
@@ -74,6 +82,9 @@ async function findLocals() {
         "</a></li><li><i class='fa fa-envelope'></i> " +
         local.Mail +
         "<ul>";
+
+*/
+      
       datosTienda(Number(local.Punto));
     }
   });
