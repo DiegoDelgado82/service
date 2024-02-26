@@ -31,7 +31,7 @@ body {
 
 .bg-banner {
   background: rgb(228, 243, 246);
-  background: -moz-linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
+  background: -moz-linear-gradient(90deg, white 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   background: -webkit-linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   background: linear-gradient(90deg, rgb(48, 192, 221) 0%, rgb(177, 177, 177) 49%, rgb(141, 220, 241) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4f3f6",endColorstr="#8ddcf1",GradientType=1);
@@ -42,7 +42,7 @@ body {
 }
 
 .logoMap {
-  width: 2.2rem;
+  width: 6rem;
 }
 
 #datosTiendaMapa li {
